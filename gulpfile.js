@@ -12,6 +12,9 @@ var gulp           = require('gulp'),
 		autoprefixer   = require('gulp-autoprefixer'),
 		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify");
+var plumber = require('gulp-plumber');
+
+
 
 // Скрипты проекта
 
@@ -79,6 +82,7 @@ gulp.task('browser-sync', function() {
 // });
 gulp.task('sass', function(){ // Создаем таск Sass
     return gulp.src('app/sass/**/*.sass') // Берем источник
+        .pipe(plumber())
         .pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
         .pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
@@ -106,7 +110,9 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([
 		'app/css/main.css',
-		]).pipe(gulp.dest('dist/css'));
+		])
+        .pipe(plumber())
+        .pipe(gulp.dest('dist/css'));
 
 	var buildJs = gulp.src([
 		'app/js/scripts.min.js',
@@ -114,7 +120,9 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'scripts'], function() {
 
 	var buildFonts = gulp.src([
 		'app/fonts/**/*',
-		]).pipe(gulp.dest('dist/fonts'));
+		])
+        .pipe(plumber())
+        .pipe(gulp.dest('dist/fonts'));
 
 });
 
@@ -136,6 +144,7 @@ gulp.task('deploy', function() {
 	.pipe(conn.dest('/path/to/folder/on/server'));
 
 });
+
 
 gulp.task('removedist', function() { return del.sync('dist'); });
 gulp.task('clearcache', function () { return cache.clearAll(); });

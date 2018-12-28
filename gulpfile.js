@@ -30,13 +30,14 @@ gulp.task('common-js', function() {
 gulp.task('scripts', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery-3.3.1/jquery-3.3.1.min.js',
+        'app/libs/PagePiling/jquery.pagepiling.min.js'
 		// //datepicker scripts
 		// 'app/libs/air-datepicker/dist/js/datepicker.min.js',
 		// 'app/libs/datepicker/datepicker.en.js',
 		// //datepicker end
 		// 'app/libs/slick-1.8.1/slick/slick.min.js',
 		// 'app/libs/magnific-popup/jquery.magnific-popup.min.js',
-		'app/js/common.js', // Всегда в конце
+		// 'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Минимизировать весь js (на выбор)

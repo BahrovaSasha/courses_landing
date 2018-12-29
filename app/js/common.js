@@ -3,19 +3,20 @@ $(document).ready(function() {
         menu: null,
         direction: 'horizontal',
         verticalCentered: true,
-        sectionsColor: [],
+        sectionsColor: ['#323232', '#fff', '#323232', '#fff', '#323232'],
         anchors: [],
         scrollingSpeed: 700,
         easing: 'swing',
         loopBottom: false,
         loopTop: false,
         css3: true,
-        navigation: {
-            'textColor': '#000',
-            'bulletsColor': '#000',
-            'position': 'right',
-            'tooltips': ['section1', 'section2', 'section3', 'section4']
-        },
+        navigation: false,
+            // {
+            // 'textColor': '#000',
+            // 'bulletsColor': '#000',
+            // 'position': 'right',
+            // 'tooltips': ['section1', 'section2', 'section3', 'section4']
+        // },
         normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
         touchSensitivity: 5,

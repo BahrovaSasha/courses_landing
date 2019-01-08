@@ -1,10 +1,10 @@
 $(document).ready(function() {
     $('#pagepiling').pagepiling({
-        menu: null,
+        menu: '#myMenu',
         direction: 'horizontal',
         verticalCentered: true,
         sectionsColor: ['#323232', '#fff', '#323232', '#fff', '#323232'],
-        anchors: [],
+        anchors: ['main', 'services', 'works', 'team', 'contact'],
         scrollingSpeed: 700,
         easing: 'swing',
         loopBottom: false,

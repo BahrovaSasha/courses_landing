@@ -29,4 +29,9 @@ $(document).ready(function() {
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},
     });
+
+    $('#hmbrgr').click(function(){
+        $(this).toggleClass('open');
+        $('.myMenu-list').toggleClass('myMenu-mob');
+    });
 });

@@ -1971,6 +1971,7 @@ html {
   opacity: 1; }
 
 html, body {
+  min-width: 270px;
   height: 100%; }
 
 html {
@@ -2023,7 +2024,7 @@ header {
   width: 120px;
   background-color: #FDC229;
   position: absolute;
-  z-index: 20;
+  z-index: 19;
   height: 288px;
   left: 0; }
   @media only screen and (max-width: 992px) {
@@ -2108,7 +2109,153 @@ header {
   display: none; }
   @media only screen and (max-width: 768px) {
     .hmbrgr-menu {
-      display: block; } }
+      display: inline-block;
+      overflow: visible;
+      margin: 0;
+      padding: 15px 20px;
+      cursor: pointer;
+      -webkit-transition-timing-function: linear;
+           -o-transition-timing-function: linear;
+              transition-timing-function: linear;
+      -webkit-transition-duration: .15s;
+           -o-transition-duration: .15s;
+              transition-duration: .15s;
+      -webkit-transition-property: opacity,-webkit-filter;
+      transition-property: opacity,-webkit-filter;
+      -o-transition-property: opacity,filter;
+      transition-property: opacity,filter;
+      transition-property: opacity,filter,-webkit-filter;
+      text-transform: none;
+      color: inherit;
+      border: 0;
+      background-color: transparent; }
+      .hmbrgr-menu .hamburger-box {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 24px; }
+        .hmbrgr-menu .hamburger-box .hamburger-inner {
+          position: absolute;
+          width: 40px;
+          height: 2px;
+          -webkit-transition-timing-function: ease;
+               -o-transition-timing-function: ease;
+                  transition-timing-function: ease;
+          -webkit-transition-duration: .15s;
+               -o-transition-duration: .15s;
+                  transition-duration: .15s;
+          -webkit-transition-property: -webkit-transform;
+          transition-property: -webkit-transform;
+          -o-transition-property: transform;
+          transition-property: transform;
+          transition-property: transform, -webkit-transform;
+          background-color: #FDC229;
+          top: 50%;
+          display: block; }
+          .hmbrgr-menu .hamburger-box .hamburger-inner:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            -webkit-transition-timing-function: ease;
+                 -o-transition-timing-function: ease;
+                    transition-timing-function: ease;
+            -webkit-transition-duration: .15s;
+                 -o-transition-duration: .15s;
+                    transition-duration: .15s;
+            -webkit-transition-property: -webkit-transform;
+            transition-property: -webkit-transform;
+            -o-transition-property: transform;
+            transition-property: transform;
+            transition-property: transform, -webkit-transform;
+            background-color: #FDC229;
+            -webkit-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+            -o-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+            transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+            top: -10px; }
+          .hmbrgr-menu .hamburger-box .hamburger-inner:after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            -webkit-transition-timing-function: ease;
+                 -o-transition-timing-function: ease;
+                    transition-timing-function: ease;
+            -webkit-transition-duration: .15s;
+                 -o-transition-duration: .15s;
+                    transition-duration: .15s;
+            -webkit-transition-property: -webkit-transform;
+            transition-property: -webkit-transform;
+            -o-transition-property: transform;
+            transition-property: transform;
+            transition-property: transform, -webkit-transform;
+            background-color: #FDC229;
+            -webkit-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+            -o-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+            transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+            bottom: -10px; } }
+
+.hmbrgr-menu.open {
+  z-index: 19; }
+  .hmbrgr-menu.open:before {
+    content: '';
+    display: block;
+    background-color: #fff;
+    height: 34rem;
+    width: 20rem;
+    position: absolute;
+    right: 120px;
+    top: 0; }
+    @media only screen and (max-width: 576px) {
+      .hmbrgr-menu.open:before {
+        right: 80px; } }
+  .hmbrgr-menu.open .hamburger-inner:before {
+    content: '';
+    display: block;
+    top: 0;
+    -webkit-transition: bottom .08s ease-out,top .08s ease-out,opacity 0s linear .08s;
+    -o-transition: bottom .08s ease-out,top .08s ease-out,opacity 0s linear .08s;
+    transition: bottom .08s ease-out,top .08s ease-out,opacity 0s linear .08s;
+    opacity: 0; }
+  .hmbrgr-menu.open .hamburger-inner:after {
+    content: '';
+    display: block;
+    bottom: 0;
+    -webkit-transition: bottom .08s ease-out,top .08s ease-out,opacity 0s linear .08s;
+    -o-transition: bottom .08s ease-out,top .08s ease-out,opacity 0s linear .08s;
+    transition: bottom .08s ease-out,top .08s ease-out,opacity 0s linear .08s;
+    opacity: 0; }
+
+.myMenu-list.myMenu-mob {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 60px;
+  z-index: 20;
+  margin: 0;
+  right: 120px;
+  width: 20rem;
+  padding-left: 0; }
+  @media only screen and (max-width: 576px) {
+    .myMenu-list.myMenu-mob {
+      right: 80px; } }
+  .myMenu-list.myMenu-mob .myMenu-item {
+    padding: 10px 24px; }
+    .myMenu-list.myMenu-mob .myMenu-item:before {
+      top: 24px; }
 
 .call {
   width: 120px;
@@ -2131,6 +2278,22 @@ header {
   @media only screen and (max-width: 576px) {
     .call {
       width: 80px; } }
+
+.first-banner:before {
+  content: url(../img/den_crop.png);
+  height: 100vh;
+  width: 44rem;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.first-banner:after {
+  content: url(../img/valya_crop.png);
+  height: 100vh;
+  width: 44rem;
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 footer {
   position: fixed;
@@ -2176,6 +2339,9 @@ footer {
     @media only screen and (max-width: 576px) {
       footer .rights {
         margin: 4px 0; } }
+    @media only screen and (max-width: 350px) {
+      footer .rights {
+        font-size: 12px; } }
   footer .socials {
     width: 47rem;
     background-color: #FDC229;

@@ -39,8 +39,8 @@
 //	color: #777
 
 html, body
-	height: 100%
-	// width: 100%
+    min-width: 270px
+    height: 100%
 
 html
   font-size: 10px
@@ -95,7 +95,7 @@ header
 	width: 120px
 	background-color: $accent
 	position: absolute
-	z-index: 20
+	z-index: 19
 	height: 288px
 	left: 0
 	@include lg
@@ -158,7 +158,105 @@ header
 .hmbrgr-menu
 	display: none
 	@include md
-		display: block
+        display: inline-block
+        overflow: visible
+        margin: 0
+        padding: 15px 20px
+        cursor: pointer
+        transition-timing-function: linear
+        transition-duration: .15s
+        transition-property: opacity,filter
+        text-transform: none
+        color: inherit
+        border: 0
+        background-color: transparent
+        .hamburger-box
+            position: relative
+            display: inline-block
+            width: 40px
+            height: 24px
+            .hamburger-inner
+                position: absolute
+                width: 40px
+                height: 2px
+                transition-timing-function: ease
+                transition-duration: .15s
+                transition-property: transform
+                background-color: $accent
+                top: 50%
+                display: block
+                //margin-top: -2px
+                &:before
+                    content: ''
+                    display: block
+                    position: absolute
+                    width: 40px
+                    height: 2px
+                    transition-timing-function: ease
+                    transition-duration: .15s
+                    transition-property: transform
+                    background-color: $accent
+                    transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear
+                    top: -10px
+                &:after
+                    content: ''
+                    display: block
+                    position: absolute
+                    width: 40px
+                    height: 2px
+                    transition-timing-function: ease
+                    transition-duration: .15s
+                    transition-property: transform
+                    background-color: $accent
+                    transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear
+                    bottom: -10px
+.hmbrgr-menu.open
+    z-index: 19
+    &:before
+        content: ''
+        display: block
+        background-color: #fff
+        height: 34rem
+        width: 20rem
+        position: absolute
+        right: 120px
+        top: 0
+        //transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+        @include sm
+            right: 80px
+    .hamburger-inner
+        &:before
+            content: ''
+            display: block
+            top: 0
+            transition: bottom .08s ease-out,top .08s ease-out,opacity 0s linear .08s
+            opacity: 0
+        &:after
+            content: ''
+            display: block
+            bottom: 0
+            transition: bottom .08s ease-out,top .08s ease-out,opacity 0s linear .08s
+            opacity: 0
+.myMenu-list.myMenu-mob
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: fixed
+    top: 60px
+    z-index: 20
+    margin: 0
+    right: 120px
+    width: 20rem
+    padding-left: 0
+    //transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+    @include sm
+        right: 80px
+    .myMenu-item
+        padding: 10px 24px
+        &:before
+            top: 24px
+
+
 .call
 	width: 120px
 	background-color: $accent
@@ -170,6 +268,26 @@ header
 	font-size: 24px
 	@include sm
 		width: 80px
+
+.first-banner
+	//position: relative
+	&:before
+		content: url(../img/den_crop.png)
+		//background: url(../img/den_crop.png) no-repeat
+		height: 100vh
+		width: 44rem
+		position: absolute
+		top: 0
+		left: 0
+	&:after
+		content: url(../img/valya_crop.png)
+		//background: url(../img/valya_crop.png) no-repeat
+		height: 100vh
+		width: 44rem
+		position: absolute
+		top: 0
+		right: 0
+		
 footer
 	position: fixed
 	z-index: 10
@@ -194,6 +312,9 @@ footer
 			font-size: 14px
 		@include sm
 			margin: 4px 0
+		@include xs
+			font-size: 12px
+
 	.socials
 		width: 47rem
 		background-color: $accent

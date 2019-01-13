@@ -2279,21 +2279,25 @@ header {
     .call {
       width: 80px; } }
 
-.first-banner:before {
-  content: url(../img/den_crop.png);
+.first-banner .person-img_left {
+  background: url(../img/den_crop.png) no-repeat 50% 0;
+  width: 60rem;
   height: 100vh;
-  width: 44rem;
+  -webkit-background-size: cover;
+          background-size: cover;
   position: absolute;
-  top: 0;
-  left: 0; }
+  left: 5rem;
+  top: 9rem; }
 
-.first-banner:after {
-  content: url(../img/valya_crop.png);
+.first-banner .person-img_right {
+  background: url(../img/valya_crop.png) no-repeat 50% -10%;
+  width: 60rem;
   height: 100vh;
-  width: 44rem;
+  right: -8%;
+  top: 9rem;
   position: absolute;
-  top: 0;
-  right: 0; }
+  -webkit-background-size: cover;
+          background-size: cover; }
 
 footer {
   position: fixed;

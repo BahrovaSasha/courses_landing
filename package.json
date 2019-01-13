@@ -1,7 +1,6 @@
 {
-  "name": "courses_landing",
+  "name": "webstudio_landing",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp-plumber": "^1.2.1"
@@ -24,5 +23,14 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1",
     "vinyl-ftp": "^0.6.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BahrovaSasha/webstudio_landing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BahrovaSasha/webstudio_landing/issues"
+  },
+  "homepage": "https://github.com/BahrovaSasha/webstudio_landing#readme",
+  "description": ""
 }

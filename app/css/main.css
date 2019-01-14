@@ -2280,24 +2280,84 @@ header {
       width: 80px; } }
 
 .first-banner .person-img_left {
-  background: url(../img/den_crop.png) no-repeat 50% 0;
-  width: 60rem;
-  height: 100vh;
-  -webkit-background-size: cover;
-          background-size: cover;
+  background: url(../img/den_crop.png) no-repeat 50% 100%;
+  width: 50rem;
+  height: 90%;
+  -webkit-background-size: contain;
+          background-size: contain;
   position: absolute;
-  left: 5rem;
-  top: 9rem; }
+  left: 0;
+  bottom: 0; }
 
 .first-banner .person-img_right {
-  background: url(../img/valya_crop.png) no-repeat 50% -10%;
-  width: 60rem;
-  height: 100vh;
-  right: -8%;
-  top: 9rem;
+  background: url(../img/valya_crop.png) no-repeat 0 280%;
+  width: 50rem;
+  height: 90%;
+  right: 0;
+  bottom: 0;
   position: absolute;
-  -webkit-background-size: cover;
-          background-size: cover; }
+  -webkit-background-size: contain;
+          background-size: contain; }
+
+.first-banner_content {
+  margin-left: 30%;
+  padding-bottom: 10rem; }
+  .first-banner_content h1 {
+    font-family: "YesevaOne";
+    font-size: 84px;
+    color: #fff;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0; }
+  .first-banner_content .first-banner_descript {
+    font-family: "Roboto-Light";
+    font-size: 22px;
+    color: #fff;
+    padding-top: 24px;
+    margin: 0; }
+
+.section_content {
+  margin-left: 30%;
+  padding-top: 12rem;
+  width: 40%; }
+
+.section_header {
+  font-family: "YesevaOne";
+  font-size: 64px;
+  font-weight: normal;
+  line-height: normal;
+  color: #FDC229;
+  margin: 0; }
+
+.section_descript {
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  color: #000;
+  padding-top: 24px;
+  margin: 0; }
+
+.services_content {
+  width: 80%;
+  margin-left: 10%;
+  padding: 8rem 0; }
+  .services_content .one-service {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 10rem; }
+    .services_content .one-service .service-icon {
+      width: 52px;
+      height: 52px;
+      background-color: #ccc; }
+    .services_content .one-service .service-title {
+      font-family: "Roboto-Regular";
+      font-size: 18px;
+      padding-left: 2rem; }
 
 footer {
   position: fixed;

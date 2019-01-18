@@ -20,56 +20,82 @@
     <session id="-408585618">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.140" value="1" />
+          <entry key="project.open.time.144" value="1" />
+          <entry key="project.open.time.183" value="1" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.78" value="1" />
+          <entry key="project.open.time.85" value="1" />
           <entry key="project.open.time.88" value="1" />
           <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="8" />
-          <entry key="html" value="1" />
-          <entry key="js" value="1" />
-          <entry key="php" value="4" />
-          <entry key="sass" value="4" />
+          <entry key="css" value="14" />
+          <entry key="html" value="5" />
+          <entry key="js" value="2" />
+          <entry key="php" value="8" />
+          <entry key="sass" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="8" />
-          <entry key="HTML" value="1" />
-          <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="4" />
-          <entry key="Sass" value="4" />
+          <entry key="CSS" value="14" />
+          <entry key="HTML" value="5" />
+          <entry key="JavaScript" value="2" />
+          <entry key="PHP" value="8" />
+          <entry key="Sass" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="685" />
-          <entry key="html" value="1110" />
+          <entry key="css" value="947" />
+          <entry key="html" value="1672" />
           <entry key="js" value="102" />
-          <entry key="php" value="32" />
-          <entry key="sass" value="4008" />
+          <entry key="php" value="130" />
+          <entry key="sass" value="5036" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="685" />
-          <entry key="HTML" value="1110" />
+          <entry key="CSS" value="947" />
+          <entry key="HTML" value="1672" />
           <entry key="JavaScript" value="102" />
-          <entry key="PHP" value="32" />
-          <entry key="Sass" value="4008" />
+          <entry key="PHP" value="130" />
+          <entry key="Sass" value="5036" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="674">
+              <caret line="454" column="22" lean-forward="true" selection-start-line="454" selection-start-column="22" selection-end-line="454" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="637">
+              <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,20 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>auth-form_fie</find>
-      <find>send-</find>
-      <find>support-header</find>
-      <find>contact-us</find>
-      <find>panel-body</find>
-      <find>billing-wrapper h2</find>
-      <find>.pipe(cof</find>
-      <find>popup-apply</find>
-      <find>21.07.2019</find>
-      <find>packages_table</find>
-      <find>tours-details</find>
-      <find>.advantages</find>
-      <find>21.04.2019</find>
-      <find>food and beverages included</find>
       <find>matchmaker-cover</find>
       <find>tour-plan</find>
       <find>hmbrgr-menu</find>
@@ -110,6 +122,20 @@
       <find>modal-body</find>
       <find>modal-dia</find>
       <find>modal</find>
+      <find>grey</find>
+      <find>footer-mob</find>
+      <find>main-</find>
+      <find>team</find>
+      <find>main-mob</find>
+      <find>message-list-modal_city</find>
+      <find>mesage</find>
+      <find>message-list_item</find>
+      <find>message-list_left</find>
+      <find>notification-list_row-wrap</find>
+      <find>gift-sele</find>
+      <find>gift-select</find>
+      <find>contacts_con</find>
+      <find>contacts_fi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,7 +149,6 @@
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/letters_dialog.php" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/content/ui/css/_main.css" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/profiles.php" />
-        <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/header.php" />
         <option value="D:/!Realbrides_extras/mail-new/merry-christmas/merry-christmas.html" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/support.php" />
         <option value="$PROJECT_DIR$/app/sass/_fonts.sass" />
@@ -134,12 +159,15 @@
         <option value="&lt;8699c598-3d80-4fe5-9f73-ecdc1e8db5a7&gt;/application/views/tours/lp_tours.php" />
         <option value="&lt;8699c598-3d80-4fe5-9f73-ecdc1e8db5a7&gt;/content/tours/css/lp_urb_tours.min.css" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
-        <option value="$PROJECT_DIR$/app/sass/main.sass" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/payment.php" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/footer.php" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/content/ui/css/payment.css" />
+        <option value="$PROJECT_DIR$/app/css/main.css" />
+        <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/header.php" />
+        <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/gifts.php" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/content/ui/css/main.css" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/sass/main.sass" />
       </list>
     </option>
   </component>
@@ -177,6 +205,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,7 +240,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,16 +300,20 @@
       <workItem from="1547190345105" duration="7316000" />
       <workItem from="1547454136158" duration="14088000" />
       <workItem from="1547536823798" duration="22389000" />
+      <workItem from="1547622579755" duration="10127000" />
+      <workItem from="1547710859723" duration="18955000" />
+      <workItem from="1547796720437" duration="7776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178072000" />
+    <option name="totallyTimeSpent" value="214930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.16311301" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.117803834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.5021645" side_tool="true" weight="0.15031983" />
@@ -384,13 +416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="2106" column="12" selection-start-line="2106" selection-start-column="1" selection-end-line="2106" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
@@ -405,6 +430,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="2420" column="15" selection-start-line="2420" selection-start-column="15" selection-end-line="2420" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/_vars.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -412,17 +444,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="358" column="26" selection-start-line="358" selection-start-column="26" selection-end-line="358" selection-end-column="26" />
+        <state relative-caret-position="637">
+          <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="60" column="22" lean-forward="true" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
+        <state relative-caret-position="674">
+          <caret line="454" column="22" lean-forward="true" selection-start-line="454" selection-start-column="22" selection-end-line="454" selection-end-column="22" />
         </state>
       </provider>
     </entry>

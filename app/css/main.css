@@ -2007,10 +2007,10 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 84px;
   border-bottom: 1px solid #7d7d7d; }
   @media only screen and (max-width: 768px) {
@@ -2018,18 +2018,48 @@ header {
       height: 76px; } }
   @media only screen and (max-width: 576px) {
     header {
-      height: 60px; } }
+      height: 6rem; } }
 
 .logo {
-  width: 120px;
+  width: 12rem;
   background-color: #FDC229;
   position: absolute;
   z-index: 19;
   height: 288px;
   left: 0; }
+  .logo a {
+    width: 100%;
+    height: 100%; }
   @media only screen and (max-width: 992px) {
     .logo {
       width: 9rem; } }
+
+.lang-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 14rem;
+  height: 100%; }
+  .lang-top .one-lang {
+    height: 100%;
+    padding: 0 6px;
+    font-family: "Roboto-Regular";
+    color: #7d7d7d;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .lang-top .one-lang.active {
+    color: #FDC229; }
 
 .menu-right {
   display: -webkit-box;
@@ -2290,7 +2320,7 @@ header {
   bottom: 0; }
 
 .first-banner .person-img_right {
-  background: url(../img/valya_crop.png) no-repeat 0 280%;
+  background: url(../img/valya_crop.png) no-repeat 0 50%;
   width: 50rem;
   height: 90%;
   right: 0;
@@ -2318,7 +2348,6 @@ header {
 
 .section_content {
   margin-left: 20%;
-  padding-top: 12rem;
   width: 40%; }
 
 .section_header {
@@ -2399,7 +2428,7 @@ header {
       .works_content .next-works .top-works .rectangle-work {
         width: 100%;
         height: 100%;
-        background-color: #eee; }
+        background-color: #7e7e7e; }
     .works_content .next-works .bottom-works {
       height: 50%;
       width: 100%;
@@ -2409,12 +2438,12 @@ header {
       display: flex; }
       .works_content .next-works .bottom-works .rectangle-work {
         height: 100%;
-        background-color: #cbbde2;
+        background-color: #eee;
         width: 100%; }
       .works_content .next-works .bottom-works .square-work {
         height: 100%;
         width: 400px;
-        background-color: #e9ecef; }
+        background-color: #cecece; }
 
 .team_content {
   width: 80%;
@@ -2509,7 +2538,15 @@ header {
 
 .contacts_field {
   margin-bottom: 25px;
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .contacts_field-input {
   display: block;
@@ -2530,10 +2567,14 @@ header {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  width: 400px; }
+  @media (max-width: 1400px) {
+    .button-wrap {
+      width: 100%; } }
 
 .call-request {
-  padding: 1rem 1.8rem;
+  padding: 1rem 0 1rem 1.8rem;
   background: transparent;
   font-size: 18px;
   font-family: "Roboto-Regular";

@@ -2013,12 +2013,12 @@ header {
           justify-content: space-between;
   height: 84px;
   border-bottom: 1px solid #7d7d7d; }
+  @media only screen and (max-width: 992px) {
+    header {
+      height: 74px; } }
   @media only screen and (max-width: 768px) {
     header {
-      height: 76px; } }
-  @media only screen and (max-width: 576px) {
-    header {
-      height: 6rem; } }
+      height: 60px; } }
 
 .logo {
   width: 12rem;
@@ -2030,9 +2030,13 @@ header {
   .logo a {
     width: 100%;
     height: 100%; }
+  @media (max-width: 1300px) {
+    .logo {
+      width: 10rem; } }
   @media only screen and (max-width: 992px) {
     .logo {
-      width: 9rem; } }
+      width: 9rem;
+      height: 200px; } }
 
 .lang-top {
   display: -webkit-box;
@@ -2045,6 +2049,9 @@ header {
           align-items: center;
   margin-left: 14rem;
   height: 100%; }
+  @media only screen and (max-width: 992px) {
+    .lang-top {
+      margin-left: 10rem; } }
   .lang-top .one-lang {
     height: 100%;
     padding: 0 6px;
@@ -2058,6 +2065,9 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media only screen and (max-width: 992px) {
+      .lang-top .one-lang {
+        padding: 0 10px; } }
   .lang-top .one-lang.active {
     color: #FDC229; }
 
@@ -2083,7 +2093,7 @@ header {
       width: 90%; } }
   @media only screen and (max-width: 992px) {
     .menu-right {
-      width: 94%; } }
+      width: 98%; } }
 
 .myMenu-list {
   display: -webkit-box;
@@ -2102,10 +2112,10 @@ header {
   font-family: "Roboto-Regular";
   text-transform: uppercase;
   font-size: 18px; }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 1200px) {
     .myMenu-list {
       font-size: 16px; } }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     .myMenu-list {
       display: none; } }
   .myMenu-list li {
@@ -2115,7 +2125,7 @@ header {
         padding: 0 30px; } }
     @media only screen and (max-width: 1200px) {
       .myMenu-list li {
-        padding: 0 24px; } }
+        padding: 0 20px; } }
     @media only screen and (max-width: 992px) {
       .myMenu-list li {
         padding: 0 16px; } }
@@ -2131,13 +2141,16 @@ header {
       position: absolute;
       top: 18px;
       left: 0; }
-      @media only screen and (max-width: 992px) {
+      @media only screen and (max-width: 1200px) {
         .myMenu-list .myMenu-item.active:before {
           top: 16px; } }
+      @media only screen and (max-width: 992px) {
+        .myMenu-list .myMenu-item.active:before {
+          top: 12px; } }
 
 .hmbrgr-menu {
   display: none; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     .hmbrgr-menu {
       display: inline-block;
       overflow: visible;
@@ -2236,7 +2249,7 @@ header {
     height: 34rem;
     width: 20rem;
     position: absolute;
-    right: 120px;
+    right: 9rem;
     top: 0; }
     @media only screen and (max-width: 576px) {
       .hmbrgr-menu.open:before {
@@ -2276,7 +2289,7 @@ header {
   top: 60px;
   z-index: 20;
   margin: 0;
-  right: 120px;
+  right: 9rem;
   width: 20rem;
   padding-left: 0; }
   @media only screen and (max-width: 576px) {
@@ -2305,49 +2318,118 @@ header {
           justify-content: center;
   color: #323232;
   font-size: 24px; }
+  @media only screen and (max-width: 992px) {
+    .call {
+      width: 9rem; } }
   @media only screen and (max-width: 576px) {
     .call {
-      width: 80px; } }
+      width: 8rem; } }
 
 .first-banner .person-img_left {
-  background: url(../img/den_crop.png) no-repeat 50% 100%;
+  background: url(../img/den_crop.png) no-repeat 0 100%;
   width: 50rem;
   height: 90%;
   -webkit-background-size: contain;
           background-size: contain;
   position: absolute;
-  left: 0;
-  bottom: 0; }
+  bottom: -2%;
+  left: 5%; }
+  @media (max-width: 1600px) {
+    .first-banner .person-img_left {
+      left: 4%;
+      width: 40rem;
+      background-position: 100% 100%; } }
+  @media (max-width: 1300px) {
+    .first-banner .person-img_left {
+      left: 5%;
+      bottom: -5%;
+      width: 28%; } }
+  @media only screen and (max-width: 992px) {
+    .first-banner .person-img_left {
+      width: 30%; } }
+  @media only screen and (max-width: 768px) {
+    .first-banner .person-img_left {
+      bottom: -7%; } }
 
 .first-banner .person-img_right {
   background: url(../img/valya_crop.png) no-repeat 0 50%;
   width: 50rem;
   height: 90%;
-  right: 0;
-  bottom: 0;
+  right: 2%;
+  bottom: -6%;
   position: absolute;
   -webkit-background-size: contain;
           background-size: contain; }
+  @media (max-width: 1600px) {
+    .first-banner .person-img_right {
+      right: 0;
+      bottom: -2%;
+      background-position: 100% 100%;
+      width: 40rem; } }
+  @media (max-width: 1300px) {
+    .first-banner .person-img_right {
+      width: 28%;
+      bottom: -5%; } }
+  @media only screen and (max-width: 992px) {
+    .first-banner .person-img_right {
+      width: 30%; } }
+  @media only screen and (max-width: 768px) {
+    .first-banner .person-img_right {
+      bottom: -7%; } }
 
 .first-banner_content {
-  margin-left: 30%;
+  margin-left: 36%;
   padding-bottom: 10rem; }
+  @media (max-width: 1600px) {
+    .first-banner_content {
+      margin-left: 32%; } }
+  @media (max-width: 1300px) {
+    .first-banner_content {
+      margin-left: 36%;
+      padding-bottom: 5rem; } }
+  @media only screen and (max-width: 992px) {
+    .first-banner_content {
+      margin-left: 34%;
+      padding-bottom: 0; } }
   .first-banner_content h1 {
     font-family: "YesevaOne";
-    font-size: 84px;
+    font-size: 100px;
     color: #fff;
     font-weight: normal;
     line-height: normal;
     margin: 0; }
+    @media (max-width: 1300px) {
+      .first-banner_content h1 {
+        font-size: 84px; } }
+    @media only screen and (max-width: 1200px) {
+      .first-banner_content h1 {
+        font-size: 70px; } }
+    @media only screen and (max-width: 992px) {
+      .first-banner_content h1 {
+        font-size: 64px; } }
+    @media only screen and (max-width: 768px) {
+      .first-banner_content h1 {
+        font-size: 44px; } }
   .first-banner_content .first-banner_descript {
     font-family: "Roboto-Light";
     font-size: 22px;
     color: #fff;
     padding-top: 24px;
     margin: 0; }
+    @media (max-width: 1300px) {
+      .first-banner_content .first-banner_descript {
+        font-size: 18px; } }
+    @media only screen and (max-width: 992px) {
+      .first-banner_content .first-banner_descript {
+        width: 50%; } }
+    @media only screen and (max-width: 768px) {
+      .first-banner_content .first-banner_descript {
+        font-size: 16px;
+        width: 60%; } }
 
 .section_content {
   margin-left: 20%;
+  padding-top: 12rem;
   width: 40%; }
 
 .section_header {
@@ -2368,7 +2450,10 @@ header {
 .services_content {
   width: 80%;
   margin-left: 10%;
-  padding: 8rem 0; }
+  padding: 6rem 0; }
+  @media (max-width: 1400px) {
+    .services_content {
+      padding: 2rem 0 8.4rem; } }
   .services_content .one-service {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2378,7 +2463,10 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-bottom: 10rem; }
+    padding-bottom: 4rem; }
+    @media (max-width: 1400px) {
+      .services_content .one-service {
+        padding-bottom: 0; } }
     .services_content .one-service .service-icon {
       width: 52px;
       height: 52px;
@@ -2606,6 +2694,12 @@ footer {
   -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse; }
+  @media only screen and (max-width: 992px) {
+    footer {
+      height: 74px; } }
+  @media only screen and (max-width: 768px) {
+    footer {
+      height: 60px; } }
   @media only screen and (max-width: 576px) {
     footer {
       -webkit-box-orient: vertical;
@@ -2624,7 +2718,7 @@ footer {
         font-size: 14px; } }
     @media only screen and (max-width: 576px) {
       footer .rights {
-        margin: 4px 0; } }
+        margin: 0; } }
     @media only screen and (max-width: 350px) {
       footer .rights {
         font-size: 12px; } }
@@ -2643,9 +2737,15 @@ footer {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
             justify-content: space-around; }
+    @media only screen and (max-width: 992px) {
+      footer .socials {
+        width: 40rem; } }
     @media only screen and (max-width: 576px) {
       footer .socials {
         width: 100%; } }
     footer .socials .social-link {
       color: #323232;
       font-size: 24px; }
+      @media only screen and (max-width: 576px) {
+        footer .socials .social-link {
+          font-size: 18px; } }

@@ -87,10 +87,12 @@ header
 	justify-content: space-between
 	height: 84px
 	border-bottom: 1px solid #7d7d7d
+	@include lg
+		height: 74px
 	@include md
-		height: 76px
-	@include sm
-		height: 6rem
+		height: 60px
+	//@include sm
+	//	height: 6rem
 .logo
 	width: 12rem
 	background-color: $accent
@@ -101,14 +103,19 @@ header
 	a
 		width: 100%
 		height: 100%
+	@include rwd(1300)
+		width: 10rem
 	@include lg
 		width: 9rem
+		height: 200px
 
 .lang-top
 	display: flex
 	align-items: center
 	margin-left: 14rem
 	height: 100%
+	@include lg
+		margin-left: 10rem
 	.one-lang
 		height: 100%
 		padding: 0 6px
@@ -116,6 +123,8 @@ header
 		color: #7d7d7d
 		display: flex
 		align-items: center
+		@include lg
+			padding: 0 10px
 	.one-lang.active
 		color: $accent
 .menu-right
@@ -128,7 +137,7 @@ header
 	@include xl
 		width: 90%
 	@include lg
-		width: 94%
+		width: 98%
 .myMenu-list
 	display: flex
 	width: 100%
@@ -137,16 +146,18 @@ header
 	font-family: $nav-font
 	text-transform: uppercase
 	font-size: 18px
-	@include lg
+	@include xl
 		font-size: 16px
-	@include md
+	@include lg
 		display: none
+	//@include md
+	//	display: none
 	li
 		padding: 0 36px
 		@include rwd(1300)
 			padding: 0 30px
 		@include xl
-			padding: 0 24px
+			padding: 0 20px
 		@include lg
 			padding: 0 16px
 		a
@@ -171,11 +182,13 @@ header
 			//animation-direction: normal
 			//animation-timing-function: ease-in-out
 			//animation: slide-in 0.5s forwards
-			@include lg
+			@include xl
 				top: 16px
+			@include lg
+				top: 12px
 .hmbrgr-menu
 	display: none
-	@include md
+	@include lg
         display: inline-block
         overflow: visible
         margin: 0
@@ -237,7 +250,7 @@ header
         height: 34rem
         width: 20rem
         position: absolute
-        right: 120px
+        right: 9rem
         top: 0
         //transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
         @include sm
@@ -263,7 +276,7 @@ header
     top: 60px
     z-index: 20
     margin: 0
-    right: 120px
+    right: 9rem
     width: 20rem
     padding-left: 0
     //transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
@@ -284,45 +297,97 @@ header
 	justify-content: center
 	color: $dark
 	font-size: 24px
+	@include lg
+		width: 9rem
 	@include sm
-		width: 80px
+		width: 8rem
 
 .first-banner
 	.person-img_left
-		background: url(../img/den_crop.png) no-repeat 50% 100%
+		background: url(../img/den_crop.png) no-repeat 0 100%
 		width: 50rem
 		height: 90%
 		background-size: contain
 		position: absolute
-		left: 0
-		bottom: 0
+		bottom: -2%
+		left: 5%
+		@include rwd(1600)
+			left: 4%
+			//bottom: 0
+			width: 40rem
+			background-position: 100% 100%
+		@include rwd(1300)
+			left: 5%
+			bottom: -5%
+			width: 28%
+		@include lg
+			width: 30%
+		@include md
+			bottom: -7%
 	.person-img_right
 		background: url(../img/valya_crop.png) no-repeat 0 50%
 		width: 50rem
 		height: 90%
-		right: 0
-		bottom: 0
+		right: 2%
+		bottom: -6%
 		position: absolute
 		background-size: contain
+		@include rwd(1600)
+			right: 0
+			bottom: -2%
+			background-position: 100% 100%
+			width: 40rem
+		@include rwd(1300)
+			width: 28%
+			bottom: -5%
+		@include lg
+			width: 30%
+		@include md
+			bottom: -7%
 .first-banner_content
-	margin-left: 30%
+	margin-left: 36%
 	padding-bottom: 10rem
+	@include rwd(1600)
+		margin-left: 32%
+	@include rwd(1300)
+		margin-left: 36%
+		padding-bottom: 5rem
+	@include lg
+		margin-left: 34%
+		padding-bottom: 0
+	//@include md
+	//	margin-left: 30%
 	h1
 		font-family: $header-font
-		font-size: 84px
+		font-size: 100px
 		color: #fff
 		font-weight: normal
 		line-height: normal
 		margin: 0
+		@include rwd(1300)
+			font-size: 84px
+		@include xl
+			font-size: 70px
+		@include lg
+			font-size: 64px
+		@include md
+			font-size: 44px
 	.first-banner_descript
 		font-family: $default-font
 		font-size: 22px
 		color: #fff
 		padding-top: 24px
 		margin: 0
+		@include rwd(1300)
+			font-size: 18px
+		@include lg
+			width: 50%
+		@include md
+			font-size: 16px
+			width: 60%
 .section_content
 	margin-left: 20%
-	//padding-top: 12rem
+	padding-top: 12rem
 	width: 40%
 .section_header
 	font-family: $header-font
@@ -340,11 +405,15 @@ header
 .services_content
 	width: 80%
 	margin-left: 10%
-	padding: 8rem 0
+	padding: 6rem 0
+	@include rwd(1400)
+		padding: 2rem 0 8.4rem
 	.one-service
 		display: flex
 		align-items: center
-		padding-bottom: 10rem
+		padding-bottom: 4rem
+		@include rwd(1400)
+			padding-bottom: 0
 		.service-icon
 			width: 52px
 			height: 52px
@@ -497,6 +566,10 @@ footer
 	align-items: center
 	justify-content: space-between
 	flex-direction: row-reverse
+	@include lg
+		height: 74px
+	@include md
+		height: 60px
 	@include sm
 		flex-direction: column
 		border-top: none
@@ -508,7 +581,7 @@ footer
 			padding: 0 30px
 			font-size: 14px
 		@include sm
-			margin: 4px 0
+			margin: 0
 		@include xs
 			font-size: 12px
 
@@ -519,8 +592,12 @@ footer
 		display: flex
 		align-items: center
 		justify-content: space-around
+		@include lg
+			width: 40rem
 		@include sm
 			width: 100%
 		.social-link
 			color: $dark
 			font-size: 24px
+			@include sm
+				font-size: 18px

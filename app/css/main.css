@@ -1972,7 +1972,10 @@ html {
 
 html, body {
   min-width: 270px;
-  height: 100%; }
+  height: 100vh; }
+  @media only screen and (max-width: 1200px) {
+    html, body {
+      min-height: 580px; } }
 
 html {
   font-size: 10px; }
@@ -2036,7 +2039,11 @@ header {
   @media only screen and (max-width: 992px) {
     .logo {
       width: 9rem;
-      height: 200px; } }
+      height: 20rem; } }
+  @media only screen and (max-width: 576px) {
+    .logo {
+      width: 6rem;
+      height: 16rem; } }
 
 .lang-top {
   display: -webkit-box;
@@ -2052,6 +2059,12 @@ header {
   @media only screen and (max-width: 992px) {
     .lang-top {
       margin-left: 10rem; } }
+  @media only screen and (max-width: 576px) {
+    .lang-top {
+      margin-left: 7rem; } }
+  @media only screen and (max-width: 350px) {
+    .lang-top {
+      margin-left: 6rem; } }
   .lang-top .one-lang {
     height: 100%;
     padding: 0 6px;
@@ -2068,6 +2081,9 @@ header {
     @media only screen and (max-width: 992px) {
       .lang-top .one-lang {
         padding: 0 10px; } }
+    @media only screen and (max-width: 350px) {
+      .lang-top .one-lang {
+        padding: 0 4px; } }
   .lang-top .one-lang.active {
     color: #FDC229; }
 
@@ -2171,74 +2187,77 @@ header {
       text-transform: none;
       color: inherit;
       border: 0;
-      background-color: transparent; }
-      .hmbrgr-menu .hamburger-box {
-        position: relative;
-        display: inline-block;
+      background-color: transparent; } }
+  @media only screen and (max-width: 350px) {
+    .hmbrgr-menu {
+      padding: 15px 10px; } }
+  .hmbrgr-menu .hamburger-box {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px; }
+    .hmbrgr-menu .hamburger-box .hamburger-inner {
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      -webkit-transition-timing-function: ease;
+           -o-transition-timing-function: ease;
+              transition-timing-function: ease;
+      -webkit-transition-duration: .15s;
+           -o-transition-duration: .15s;
+              transition-duration: .15s;
+      -webkit-transition-property: -webkit-transform;
+      transition-property: -webkit-transform;
+      -o-transition-property: transform;
+      transition-property: transform;
+      transition-property: transform, -webkit-transform;
+      background-color: #FDC229;
+      top: 50%;
+      display: block; }
+      .hmbrgr-menu .hamburger-box .hamburger-inner:before {
+        content: '';
+        display: block;
+        position: absolute;
         width: 40px;
-        height: 24px; }
-        .hmbrgr-menu .hamburger-box .hamburger-inner {
-          position: absolute;
-          width: 40px;
-          height: 2px;
-          -webkit-transition-timing-function: ease;
-               -o-transition-timing-function: ease;
-                  transition-timing-function: ease;
-          -webkit-transition-duration: .15s;
-               -o-transition-duration: .15s;
-                  transition-duration: .15s;
-          -webkit-transition-property: -webkit-transform;
-          transition-property: -webkit-transform;
-          -o-transition-property: transform;
-          transition-property: transform;
-          transition-property: transform, -webkit-transform;
-          background-color: #FDC229;
-          top: 50%;
-          display: block; }
-          .hmbrgr-menu .hamburger-box .hamburger-inner:before {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 40px;
-            height: 2px;
-            -webkit-transition-timing-function: ease;
-                 -o-transition-timing-function: ease;
-                    transition-timing-function: ease;
-            -webkit-transition-duration: .15s;
-                 -o-transition-duration: .15s;
-                    transition-duration: .15s;
-            -webkit-transition-property: -webkit-transform;
-            transition-property: -webkit-transform;
-            -o-transition-property: transform;
-            transition-property: transform;
-            transition-property: transform, -webkit-transform;
-            background-color: #FDC229;
-            -webkit-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
-            -o-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
-            transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
-            top: -10px; }
-          .hmbrgr-menu .hamburger-box .hamburger-inner:after {
-            content: '';
-            display: block;
-            position: absolute;
-            width: 40px;
-            height: 2px;
-            -webkit-transition-timing-function: ease;
-                 -o-transition-timing-function: ease;
-                    transition-timing-function: ease;
-            -webkit-transition-duration: .15s;
-                 -o-transition-duration: .15s;
-                    transition-duration: .15s;
-            -webkit-transition-property: -webkit-transform;
-            transition-property: -webkit-transform;
-            -o-transition-property: transform;
-            transition-property: transform;
-            transition-property: transform, -webkit-transform;
-            background-color: #FDC229;
-            -webkit-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
-            -o-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
-            transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
-            bottom: -10px; } }
+        height: 2px;
+        -webkit-transition-timing-function: ease;
+             -o-transition-timing-function: ease;
+                transition-timing-function: ease;
+        -webkit-transition-duration: .15s;
+             -o-transition-duration: .15s;
+                transition-duration: .15s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        -o-transition-property: transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        background-color: #FDC229;
+        -webkit-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+        -o-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+        transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+        top: -10px; }
+      .hmbrgr-menu .hamburger-box .hamburger-inner:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        -webkit-transition-timing-function: ease;
+             -o-transition-timing-function: ease;
+                transition-timing-function: ease;
+        -webkit-transition-duration: .15s;
+             -o-transition-duration: .15s;
+                transition-duration: .15s;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        -o-transition-property: transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        background-color: #FDC229;
+        -webkit-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+        -o-transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+        transition: bottom .08s ease-out 0s,top .08s ease-out 0s,opacity 0s linear;
+        bottom: -10px; }
 
 .hmbrgr-menu.open {
   z-index: 19; }
@@ -2324,6 +2343,9 @@ header {
   @media only screen and (max-width: 576px) {
     .call {
       width: 8rem; } }
+  @media only screen and (max-width: 350px) {
+    .call {
+      width: 6rem; } }
 
 .first-banner .person-img_left {
   background: url(../img/den_crop.png) no-repeat 0 100%;
@@ -2429,8 +2451,21 @@ header {
 
 .section_content {
   margin-left: 20%;
-  padding-top: 12rem;
   width: 40%; }
+  @media (max-width: 1300px) {
+    .section_content {
+      width: 50%; } }
+  @media only screen and (max-width: 992px) {
+    .section_content {
+      width: 70%;
+      margin-left: 14%; } }
+  @media only screen and (max-width: 768px) {
+    .section_content {
+      margin-left: 16%; } }
+  @media only screen and (max-width: 576px) {
+    .section_content {
+      padding-top: 7rem;
+      margin-left: 18%; } }
 
 .section_header {
   font-family: "YesevaOne";
@@ -2439,6 +2474,20 @@ header {
   line-height: normal;
   color: #FDC229;
   margin: 0; }
+  @media only screen and (max-width: 1200px) {
+    .section_header {
+      font-size: 48px; } }
+  @media only screen and (max-width: 768px) {
+    .section_header {
+      font-size: 36px; } }
+  @media only screen and (max-width: 576px) {
+    .section_header {
+      font-size: 28px; } }
+  @media only screen and (max-width: 350px) {
+    .section_header {
+      padding-left: 1rem;
+      font-size: 26px;
+      line-height: 1.5; } }
 
 .section_descript {
   font-family: "Roboto-Light";
@@ -2446,14 +2495,34 @@ header {
   color: #000;
   padding-top: 24px;
   margin: 0; }
+  @media only screen and (max-width: 768px) {
+    .section_descript {
+      padding-top: 18px; } }
+  @media only screen and (max-width: 576px) {
+    .section_descript {
+      font-size: 16px; } }
 
 .services_content {
   width: 80%;
   margin-left: 10%;
-  padding: 6rem 0; }
+  padding: 6rem 0;
+  margin-bottom: 84px; }
   @media (max-width: 1400px) {
     .services_content {
       padding: 2rem 0 8.4rem; } }
+  @media only screen and (max-width: 1200px) {
+    .services_content {
+      width: 90%;
+      margin: 0 auto; } }
+  @media only screen and (max-width: 992px) {
+    .services_content {
+      width: 96%; } }
+  @media only screen and (max-width: 768px) {
+    .services_content {
+      padding: 2rem 0; } }
+  @media only screen and (max-width: 350px) {
+    .services_content {
+      padding: 1rem 0; } }
   .services_content .one-service {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2467,14 +2536,33 @@ header {
     @media (max-width: 1400px) {
       .services_content .one-service {
         padding-bottom: 0; } }
+    @media only screen and (max-width: 992px) {
+      .services_content .one-service {
+        padding: 0 8px; } }
     .services_content .one-service .service-icon {
       width: 52px;
       height: 52px;
       background-color: #ccc; }
+      @media only screen and (max-width: 992px) {
+        .services_content .one-service .service-icon {
+          width: 42px;
+          height: 42px; } }
     .services_content .one-service .service-title {
       font-family: "Roboto-Regular";
       font-size: 18px;
-      padding-left: 2rem; }
+      padding-left: 2rem;
+      color: #7d7d7d;
+      margin: 0; }
+      @media only screen and (max-width: 1200px) {
+        .services_content .one-service .service-title {
+          font-size: 16px;
+          padding-left: 1.4rem; } }
+      @media only screen and (max-width: 992px) {
+        .services_content .one-service .service-title {
+          padding-left: 1rem; } }
+      @media only screen and (max-width: 768px) {
+        .services_content .one-service .service-title {
+          font-size: 14px; } }
 
 .works_content {
   width: 80%;
@@ -2533,10 +2621,31 @@ header {
         width: 400px;
         background-color: #cecece; }
 
+@media only screen and (max-width: 992px) {
+  .team-descript {
+    width: 90%; } }
+
+@media only screen and (max-width: 768px) {
+  .team-descript {
+    width: 80%; } }
+
+@media only screen and (max-width: 576px) {
+  .team-descript {
+    width: 90%; } }
+
 .team_content {
   width: 80%;
   margin-right: 25%;
   padding: 8rem 0; }
+  @media only screen and (max-width: 1200px) {
+    .team_content {
+      padding: 4rem 0; } }
+  @media only screen and (max-width: 992px) {
+    .team_content {
+      padding: 2rem 0; } }
+  @media only screen and (max-width: 768px) {
+    .team_content {
+      margin: 0 auto; } }
 
 .one-person {
   display: -webkit-box;
@@ -2552,6 +2661,10 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .one-person span {
+    font-size: 14px;
+    font-family: "Roboto-Light";
+    line-height: normal; }
 
 .team_avatar {
   background-color: #cccccc;
@@ -2559,30 +2672,71 @@ header {
   height: 88px;
   -webkit-border-radius: 50%;
           border-radius: 50%; }
+  @media only screen and (max-width: 992px) {
+    .team_avatar {
+      width: 64px;
+      height: 64px; } }
 
 .team-title {
   text-align: center;
   font-size: 18px;
   font-family: "Roboto-Regular";
-  color: #7d7d7d; }
+  color: #7d7d7d;
+  margin: 0;
+  padding-top: 6px; }
+  @media only screen and (max-width: 1200px) {
+    .team-title {
+      font-size: 16px; } }
+  @media only screen and (max-width: 992px) {
+    .team-title {
+      line-height: 1.5; } }
 
 .team-photo {
   position: absolute;
-  right: -25%;
+  right: -23%;
   top: 10%;
-  width: 50%;
+  width: 46%;
   height: 80%;
   background-color: #ccc; }
+  @media only screen and (max-width: 1200px) {
+    .team-photo {
+      height: 60%;
+      top: 20%; } }
+  @media only screen and (max-width: 768px) {
+    .team-photo {
+      display: none; } }
 
 .contacts_content {
   width: 70%;
   margin-left: 25%; }
+  @media only screen and (max-width: 768px) {
+    .contacts_content {
+      margin-left: 14%;
+      width: 76%; } }
+  @media only screen and (max-width: 576px) {
+    .contacts_content {
+      margin-left: 0;
+      width: 100%; } }
+
+@media only screen and (max-width: 576px) {
+  .contacts-left {
+    padding-top: 7rem;
+    margin-left: 14%; } }
 
 .contacts_descript {
   color: #fff;
   font-family: "Roboto-Regular";
   font-size: 24px;
   padding: 2rem 0; }
+  @media only screen and (max-width: 768px) {
+    .contacts_descript {
+      font-size: 18px; } }
+  @media only screen and (max-width: 576px) {
+    .contacts_descript {
+      padding: 0; } }
+  @media only screen and (max-width: 350px) {
+    .contacts_descript {
+      padding-left: 1rem; } }
 
 .callback-form {
   width: 100%;
@@ -2608,6 +2762,9 @@ header {
   background-color: #FDC229;
   margin: 0 auto;
   padding: 30px 20px; }
+  @media only screen and (max-width: 576px) {
+    .callback-form {
+      padding: 14px 20px; } }
 
 .form-header {
   font-family: "Roboto-Regular";
@@ -2615,6 +2772,9 @@ header {
   font-size: 24px;
   text-align: center;
   margin: 0; }
+  @media only screen and (max-width: 768px) {
+    .form-header {
+      font-size: 18px; } }
 
 .error-field {
   display: block;
@@ -2668,6 +2828,9 @@ header {
   font-family: "Roboto-Regular";
   color: #323232;
   text-transform: uppercase; }
+  @media only screen and (max-width: 576px) {
+    .call-request {
+      padding: 0 0 0 1.8rem; } }
 
 footer {
   position: fixed;

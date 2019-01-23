@@ -174,8 +174,7 @@ header
 		a
 			color: #7d7d7d
 	.myMenu-item
-		//transition: 1s cubic-bezier(0, 0, 1, 1) 500ms
-		//animation: slide-out 0.5s forwards;
+		white-space: nowrap
 	.myMenu-item.active
 		position: relative
 		&:before
@@ -401,14 +400,14 @@ header
 			width: 60%
 .section_content
 	margin-left: 20%
-	//padding-top: 12rem
+	padding-top: 10rem
 	width: 40%
 	@include rwd(1300)
 		width: 50%
 	@include xl
 		//padding-top: 9rem
 	@include lg
-		width: 70%
+		width: 80%
 		margin-left: 14%
 	@include md
 		margin-left: 16%
@@ -440,6 +439,8 @@ header
 	color: #000
 	padding-top: 24px
 	margin: 0
+	@include lg
+
 	@include md
 		padding-top: 18px
 	@include sm
@@ -481,6 +482,7 @@ header
 			padding-left: 2rem
 			color: #7d7d7d
 			margin: 0
+			line-height: 1.4
 			@include xl
 				font-size: 16px
 				padding-left: 1.4rem
@@ -489,45 +491,66 @@ header
 			@include md
 				font-size: 14px
 .works_content
-    width: 80%
-    height: 100%
-    padding: 14rem 0
-    margin: 0 auto
-    display: flex
-    .first-work
-        height: 100%
-        width: 40%
-        background-color: #ccc
-    .next-works
-        width: 60%
-        height: 100%
-        display: flex
-        flex-direction: column
-        .top-works
-            height: 50%
-            width: 100%
-            display: flex
-            .square-work
-                height: 100%
-                width: 400px
-                background-color: $accent
-                color: #000
-            .rectangle-work
-                width: 100%
-                height: 100%
-                background-color: #7e7e7e
-        .bottom-works
-            height: 50%
-            width: 100%
-            display: flex
-            .rectangle-work
-                height: 100%
-                background-color: #eee
-                width: 100%
-            .square-work
-                height: 100%
-                width: 400px
-                background-color: #cecece
+	width: 80%
+	height: 100%
+	padding: 14rem 0
+	margin: 0 auto
+	display: flex
+	.first-work
+		height: 100%
+		width: 40%
+		background-color: #ccc
+	.next-works
+		width: 60%
+		height: 100%
+		display: flex
+		flex-direction: column
+		.top-works
+			height: 50%
+			width: 100%
+			display: flex
+			.square-work
+				height: 100%
+				width: 400px
+				background-color: $accent
+				color: #000
+			.rectangle-work
+				width: 100%
+				height: 100%
+				background-color: #7e7e7e
+		.bottom-works
+			height: 50%
+			width: 100%
+			display: flex
+			.rectangle-work
+				height: 100%
+				background-color: #eee
+				width: 100%
+			.square-work
+				height: 100%
+				width: 400px
+				background-color: #cecece
+.works-header
+	font-family: $header-font
+	color: $dark
+	font-size: 28px
+	margin: 0
+	padding: 24% 0 20% 1rem
+	line-height: 1.6
+	top: 30%
+.onework-header
+	font-family: $nav-font
+	color: #fff
+	padding: 1rem 0 1rem 1rem
+	margin: 0
+.works-descript
+	color: #fff
+	padding: 2rem 0 2rem 1rem
+.work-link
+	color: #fff
+	right: 0
+
+
 .team-descript
 	@include lg
 		width: 90%

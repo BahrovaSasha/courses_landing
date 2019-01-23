@@ -2482,10 +2482,10 @@ header {
       font-size: 36px; } }
   @media only screen and (max-width: 576px) {
     .section_header {
-      font-size: 28px; } }
+      font-size: 28px;
+      padding-left: 1rem; } }
   @media only screen and (max-width: 350px) {
     .section_header {
-      padding-left: 1rem;
       font-size: 26px;
       line-height: 1.5; } }
 
@@ -2720,7 +2720,7 @@ header {
 
 @media only screen and (max-width: 576px) {
   .contacts-left {
-    padding-top: 7rem;
+    padding-top: 0;
     margin-left: 14%; } }
 
 .contacts_descript {
@@ -2728,12 +2728,23 @@ header {
   font-family: "Roboto-Regular";
   font-size: 24px;
   padding: 2rem 0; }
+  .contacts_descript p {
+    margin: 0 1rem 1rem; }
   @media only screen and (max-width: 768px) {
     .contacts_descript {
       font-size: 18px; } }
   @media only screen and (max-width: 576px) {
     .contacts_descript {
-      padding: 0; } }
+      padding: 1rem 0 0 0;
+      font-size: 17px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 90%;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
   @media only screen and (max-width: 350px) {
     .contacts_descript {
       padding-left: 1rem; } }
@@ -2762,6 +2773,9 @@ header {
   background-color: #FDC229;
   margin: 0 auto;
   padding: 30px 20px; }
+  @media only screen and (max-width: 768px) {
+    .callback-form {
+      padding: 20px; } }
   @media only screen and (max-width: 576px) {
     .callback-form {
       padding: 14px 20px; } }
@@ -2772,7 +2786,7 @@ header {
   font-size: 24px;
   text-align: center;
   margin: 0; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     .form-header {
       font-size: 18px; } }
 
@@ -2881,7 +2895,11 @@ footer {
         font-size: 14px; } }
     @media only screen and (max-width: 576px) {
       footer .rights {
-        margin: 0; } }
+        margin: 0;
+        background-color: #FDC229;
+        color: #323232;
+        width: 100%;
+        text-align: center; } }
     @media only screen and (max-width: 350px) {
       footer .rights {
         font-size: 12px; } }

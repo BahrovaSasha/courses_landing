@@ -429,8 +429,9 @@ header
 		font-size: 36px
 	@include sm
 		font-size: 28px
-	@include xs
 		padding-left: 1rem
+	@include xs
+
 		font-size: 26px
 		line-height: 1.5
 .section_descript
@@ -596,17 +597,24 @@ header
 		width: 100%
 .contacts-left
 	@include sm
-		padding-top: 7rem
+		padding-top: 0
 		margin-left: 14%
 .contacts_descript
 	color: #fff
 	font-family: $nav-font
 	font-size: 24px
 	padding: 2rem 0
+
+	p
+		margin: 0 1rem 1rem
 	@include md
 		font-size: 18px
 	@include sm
-		padding: 0
+		padding: 1rem 0 0 0
+		font-size: 17px
+		display: flex
+		width: 90%
+		flex-wrap: wrap
 	@include xs
 		padding-left: 1rem
 //.contacts-right
@@ -624,6 +632,10 @@ header
 	background-color: $accent
 	margin: 0 auto
 	padding: 30px 20px
+	@include lg
+		//padding: 20px
+	@include md
+		padding: 20px
 	@include sm
 		padding: 14px 20px
 
@@ -633,8 +645,10 @@ header
 	font-size: 24px
 	text-align: center
 	margin: 0
-	@include md
+	@include lg
 		font-size: 18px
+	@include md
+
 
     //font-weight: normal
 .error-field
@@ -704,6 +718,10 @@ footer
 			font-size: 14px
 		@include sm
 			margin: 0
+			background-color: $accent
+			color: $dark
+			width: 100%
+			text-align: center
 		@include xs
 			font-size: 12px
 

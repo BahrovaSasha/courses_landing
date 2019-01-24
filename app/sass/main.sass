@@ -66,6 +66,9 @@ body
     	max-width: 100%
     	height: auto
 
+.services-icons
+	display: none
+
 button
 	border: none
 
@@ -259,7 +262,7 @@ header
         content: ''
         display: block
         background-color: #fff
-        height: 34rem
+        height: 40rem
         width: 20rem
         position: absolute
         right: 9rem
@@ -467,12 +470,19 @@ header
 		padding-bottom: 4rem
 		@include rwd(1400)
 			padding-bottom: 0
+		@include xl
+			padding: 0 8px 10px
 		@include lg
-			padding: 0 8px
+			//padding: 0 8px
 		.service-icon
 			width: 52px
 			height: 52px
-			background-color: #ccc
+			svg
+				width: 52px
+				height: 52px
+				@include lg
+					width: 40px
+					height: 40px
 			@include lg
 				width: 42px
 				height: 42px
@@ -493,7 +503,7 @@ header
 .works_content
 	width: 80%
 	height: 100%
-	padding: 14rem 0
+	padding: 10rem 0
 	margin: 0 auto
 	display: flex
 	.first-work
@@ -579,31 +589,47 @@ header
 		width: 90%
 
 .team_content
-	width: 80%
-	margin-right: 25%
+	width: 70%
+	margin-right: 30%
+	margin-left: 5%
 	padding: 8rem 0
+	justify-content: space-between
 	@include xl
 		padding: 4rem 0
 	@include lg
 		padding: 2rem 0
 	@include md
 		margin: 0 auto
+		//width: 60%
+		justify-content: flex-start
+		padding: 0 0 2rem
+
 .one-person
 	display: flex
 	flex-direction: column
 	align-items: center
+	@include md
+		margin: 0 6px
 	span
 		font-size: 14px
 		font-family: $default-font
 		line-height: normal
+		text-align: center
+		color: #7d7d7d
+		@include lg
+			font-size: 12px
 .team_avatar
 	background-color: #cccccc
 	width: 88px
 	height: 88px
-	border-radius: 50%
+	//border-radius: 50%
 	@include lg
 		width: 64px
 		height: 64px
+	@include md
+		margin: 1rem 2.7rem 0
+
+
 .team-title
 	text-align: center
 	font-size: 18px
@@ -619,9 +645,9 @@ header
 .team-photo
 	position: absolute
 	right: -23%
-	top: 10%
+	top: 15%
 	width: 46%
-	height: 80%
+	height: 70%
 	background-color: #ccc
 	@include xl
 		height: 60%

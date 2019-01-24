@@ -33,5 +33,7 @@ $(document).ready(function() {
     $('#hmbrgr').click(function(){
         $(this).toggleClass('open');
         $('.myMenu-list').toggleClass('myMenu-mob');
+
+        
     });
 });

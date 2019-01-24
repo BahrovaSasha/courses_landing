@@ -2101,7 +2101,7 @@ header {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-  @media (max-width: 1400px) {
+  @media (max-width: 1600px) {
     .menu-right {
       width: 80%; } }
   @media only screen and (max-width: 1200px) {
@@ -2618,35 +2618,61 @@ header {
       display: flex; }
       .works_content .next-works .bottom-works .rectangle-work {
         height: 100%;
-        background-color: #eee;
+        background-color: #7e7e7e;
         width: 100%; }
       .works_content .next-works .bottom-works .square-work {
         height: 100%;
         width: 400px;
         background-color: #cecece; }
 
+.work-descript_wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .work-descript_wrapper:last-child {
+    -webkit-box-align: end;
+    -webkit-align-items: end;
+        -ms-flex-align: end;
+            align-items: end; }
+
 .works-header {
   font-family: "YesevaOne";
   color: #323232;
-  font-size: 28px;
+  font-size: 40px;
   margin: 0;
-  padding: 24% 0 20% 1rem;
-  line-height: 1.6;
-  top: 30%; }
+  padding: 1rem 0 1rem 1rem;
+  line-height: 1.6; }
 
 .onework-header {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Light";
+  font-size: 24px;
+  line-height: 1.6;
   color: #fff;
   padding: 1rem 0 1rem 1rem;
   margin: 0; }
 
 .works-descript {
   color: #fff;
-  padding: 2rem 0 2rem 1rem; }
+  font-size: 18px;
+  padding: 1rem 1rem 0 1rem;
+  margin: 0; }
 
 .work-link {
   color: #fff;
-  right: 0; }
+  font-family: "Roboto-Light";
+  font-size: 18px;
+  text-decoration: underline;
+  padding: 0 0 2rem 1rem; }
 
 @media only screen and (max-width: 992px) {
   .team-descript {

@@ -143,7 +143,7 @@ header
 	align-items: center
 	width: 70%
 	justify-content: flex-end
-	@include rwd(1400)
+	@include rwd(1600)
 		width: 80%
 	@include xl
 		width: 90%
@@ -524,31 +524,50 @@ header
 			display: flex
 			.rectangle-work
 				height: 100%
-				background-color: #eee
+				background-color: #7e7e7e
 				width: 100%
 			.square-work
 				height: 100%
 				width: 400px
 				background-color: #cecece
+.work-descript_wrapper
+	display: flex
+	flex-direction: column
+	justify-content: center
+	&:last-child
+		align-items: end
 .works-header
 	font-family: $header-font
 	color: $dark
-	font-size: 28px
+	font-size: 40px
 	margin: 0
-	padding: 24% 0 20% 1rem
+	padding: 1rem 0 1rem 1rem
 	line-height: 1.6
-	top: 30%
+
 .onework-header
-	font-family: $nav-font
+	font-family: $default-font
+	font-size: 24px
+	line-height: 1.6
 	color: #fff
 	padding: 1rem 0 1rem 1rem
 	margin: 0
 .works-descript
 	color: #fff
-	padding: 2rem 0 2rem 1rem
+	font-size: 18px
+	padding: 1rem 1rem 0 1rem
+	margin: 0
+//.work-link_wrapp
+//	display: flex
+//	align-items: flex-end
+//	width: 100%
 .work-link
 	color: #fff
-	right: 0
+	font-family: $default-font
+	font-size: 18px
+	text-decoration: underline
+	padding: 0 0 2rem 1rem
+	//margin: 0
+
 
 
 .team-descript

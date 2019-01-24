@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="urb-mobile">
+  <component name="PublishConfigData" serverName="YBS">
     <serverData>
-      <paths name="urb-desktop">
+      <paths name="YBS">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
-      <paths name="urb-mobile">
+      <paths name="urb-desktop">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

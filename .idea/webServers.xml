@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="d4a59cf7-cdb8-4163-abc6-337369029f6e" name="urb-mobile" url="http://ukrainianrealbrides.com">
-        <fileTransfer host="ukrainianrealbrides.com" port="21">
+      <webServer id="d4a59cf7-cdb8-4163-abc6-337369029f6e" name="YBS" url="http://sline.co.ua">
+        <fileTransfer host="sline.co.ua" port="21" rootFolder="/www/ybs.com.ua">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

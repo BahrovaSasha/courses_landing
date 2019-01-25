@@ -354,15 +354,15 @@
     <header>
         <div class="logo"></div>
         <div class="lang-top">
-            <a class="one-lang active">
+            <button type="button" class="one-lang active">
                 <p>ru</p>
-            </a>
-            <a class="one-lang">
+            </button>
+            <button type="button" class="one-lang">
                 <p>en</p>
-            </a>
-            <a class="one-lang">
+            </button>
+            <button type="button" class="one-lang">
                 <p>es</p>
-            </a>
+            </button>
         </div>
         <div class="menu-right">
             <ul class="myMenu-list" id="myMenu">
@@ -404,13 +404,13 @@
             </div>
             <div class="person-img_right"></div>
         </section>
-        <section class="section">
+        <section class="section pp-scrollable">
             <div class="section_content">
                 <h3 class="section_header">Что мы умеем?</h3>
                 <p class="section_descript">Мы можем взять на себя весь процесс создания сайта от креативного и современного дизайна до публикации Вашего сайта в сети.</p>
             </div>
             <div class="services_content row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 one-service">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 one-service">
                     <div class="service-icon">
                         <svg>
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#task"></use>
@@ -418,7 +418,7 @@
                     </div>
                     <p class="service-title">Создание тех. задания</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 one-service">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 one-service">
                     <div class="service-icon">
                         <svg>
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#design"></use>
@@ -426,7 +426,7 @@
                     </div>
                     <p class="service-title">Современный дизайн</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 one-service">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 one-service">
                     <div class="service-icon">
                         <svg>
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#adopt"></use>
@@ -434,7 +434,7 @@
                     </div>
                     <p class="service-title">Адаптивная вёрстка</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 one-service">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 one-service">
                     <div class="service-icon">
                         <svg>
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#program"></use>
@@ -442,7 +442,7 @@
                     </div>
                     <p class="service-title">Программирование</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 one-service">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 one-service">
                     <div class="service-icon">
                         <svg>
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#seo"></use>
@@ -450,7 +450,7 @@
                     </div>
                     <p class="service-title">SEO оптимизация на стадии разработки</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 one-service">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 one-service">
                     <div class="service-icon">
                         <svg>
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#domen"></use>
@@ -458,7 +458,7 @@
                     </div>
                     <p class="service-title">Регистрация домена</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 one-service">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 one-service">
                     <div class="service-icon">
                         <svg>
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#hosting"></use>
@@ -466,7 +466,7 @@
                     </div>
                     <p class="service-title">Выбор хостинга</p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-6 one-service">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-12 one-service">
                     <div class="service-icon">
                         <svg>
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#support"></use>
@@ -478,7 +478,7 @@
             </div>
 
         </section>
-        <section class="section">
+        <section class="section pp-scrollable">
             <div class="works_content">
                 <div class="first-work work-descript_wrapper">
                     <h4 class="onework-header">Социальная сеть<br>Ukrainian Real Brides</h4>
@@ -509,7 +509,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section pp-scrollable">
             <div class="section_content">
                 <h3 class="section_header">Haша команда</h3>
                 <p class="section_descript team-descript">Мы все абсолютно разные, но вместе - хорошо отлаженный механизм!</p>
@@ -582,6 +582,27 @@
         </div>
         <p class="rights">YBS 2015-2018 © All rights reserved.</p>
     </footer>
+
+    <div class="callback-modal" id="popup-call">
+        <div class="callback-modal_content">
+
+            <form class="callback-form">
+                <button class="close-callback">&#10006</button>
+                <h4 class="form-header">Мы вам перезвоним</h4>
+                <span class="error-field"></span>
+                <div class="contacts_field">
+                    <input id="name" type="text" class="contacts_field-input call-name" placeholder="Name" required style="border: 0;">
+                </div>
+                <div class="contacts_field">
+                    <input id="tel" type="tel" class="contacts_field-input call-phone" placeholder="Telephone" required style="border: 0;">
+                </div>
+                <div class="button-wrap">
+                    <button type="button" class="call-request">Заказать звонок</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="js/scripts.min.js?>"></script>
     <script src="js/common.js?>"></script>
 </body>

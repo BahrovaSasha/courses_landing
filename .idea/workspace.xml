@@ -21,7 +21,7 @@
     <session id="-408585618">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.122" value="1" />
           <entry key="project.open.time.140" value="1" />
           <entry key="project.open.time.144" value="1" />
@@ -31,6 +31,7 @@
           <entry key="project.open.time.184" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.202" value="1" />
+          <entry key="project.open.time.241" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.48" value="3" />
           <entry key="project.open.time.63" value="1" />
@@ -39,72 +40,92 @@
           <entry key="project.open.time.85" value="1" />
           <entry key="project.open.time.88" value="1" />
           <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="18" />
           <entry key="html" value="8" />
-          <entry key="js" value="4" />
-          <entry key="php" value="11" />
-          <entry key="sass" value="10" />
+          <entry key="js" value="5" />
+          <entry key="php" value="17" />
+          <entry key="sass" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="18" />
           <entry key="HTML" value="8" />
-          <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="11" />
-          <entry key="Sass" value="10" />
+          <entry key="JavaScript" value="5" />
+          <entry key="PHP" value="17" />
+          <entry key="Sass" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="968" />
-          <entry key="html" value="2764" />
-          <entry key="js" value="104" />
-          <entry key="php" value="130" />
-          <entry key="sass" value="9816" />
+          <entry key="html" value="2935" />
+          <entry key="js" value="198" />
+          <entry key="php" value="131" />
+          <entry key="sass" value="11116" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="968" />
-          <entry key="HTML" value="2764" />
-          <entry key="JavaScript" value="104" />
-          <entry key="PHP" value="130" />
-          <entry key="Sass" value="9816" />
+          <entry key="HTML" value="2935" />
+          <entry key="JavaScript" value="198" />
+          <entry key="PHP" value="131" />
+          <entry key="Sass" value="11116" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="264" column="21" lean-forward="true" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
+            <state relative-caret-position="655">
+              <caret line="674" column="22" lean-forward="true" selection-start-line="674" selection-start-column="22" selection-end-line="674" selection-end-column="22" />
               <folding>
-                <marker date="1548345427189" expanded="true" signature="1823:1836" ph="..." />
-                <marker date="1548345427189" expanded="true" signature="8080:8098" ph="..." />
-                <marker date="1548345427189" expanded="true" signature="10871:10944" ph="..." />
+                <marker date="1548421235946" expanded="true" signature="1823:1836" ph="..." />
+                <marker date="1548421235946" expanded="true" signature="8106:8124" ph="..." />
+                <marker date="1548421235946" expanded="true" signature="11780:11853" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" column="4" selection-start-line="38" selection-start-column="7" selection-end-line="40" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="531" column="22" lean-forward="true" selection-start-line="531" selection-start-column="22" selection-end-line="531" selection-end-column="22" />
+            <state relative-caret-position="281">
+              <caret line="514" column="47" selection-start-line="514" selection-start-column="43" selection-end-line="514" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,17 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>servi</find>
-      <find>team-photo</find>
-      <find>team_con</find>
-      <find>contacts_content</find>
-      <find>contacts-</find>
-      <find>contacts-l</find>
-      <find>contacts_con</find>
-      <find>contacts_des</find>
-      <find>call-re</find>
-      <find>contacts_de</find>
-      <find>rights</find>
       <find>form-header</find>
       <find>contacts_descript</find>
       <find>square-work</find>
@@ -146,11 +156,22 @@
       <find>fun-love</find>
       <find>svg</find>
       <find>one-service</find>
-      <find>works_content</find>
       <find>team_content</find>
       <find>one-person</find>
       <find>one-per</find>
       <find>hmbrgr</find>
+      <find>works_content</find>
+      <find>onewor</find>
+      <find>services_co</find>
+      <find>works-header</find>
+      <find>bottom-works</find>
+      <find>recta</find>
+      <find>lang-top</find>
+      <find>popu</find>
+      <find>form</find>
+      <find>button-wrap</find>
+      <find>team</find>
+      <find>team-</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -181,9 +202,10 @@
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/gifts.php" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/main.php" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/content/ui/css/main.css" />
+        <option value="&lt;8699c598-3d80-4fe5-9f73-ecdc1e8db5a7&gt;/application/views/matchmaking_remake/footer.php" />
+        <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/sass/main.sass" />
-        <option value="$PROJECT_DIR$/app/js/common.js" />
       </list>
     </option>
   </component>
@@ -330,18 +352,19 @@
       <workItem from="1548318639156" duration="4897000" />
       <workItem from="1548338662217" duration="242000" />
       <workItem from="1548338965745" duration="132000" />
-      <workItem from="1548339146026" duration="6579000" />
+      <workItem from="1548339146026" duration="6700000" />
+      <workItem from="1548403182993" duration="14950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285112000" />
+    <option name="totallyTimeSpent" value="300183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.12846482" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.5021645" side_tool="true" weight="0.15031983" />
@@ -362,7 +385,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Remote Host" order="4" weight="0.23294243" />
+      <window_info active="true" anchor="right" id="Remote Host" order="4" visible="true" weight="0.23294243" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,13 +474,6 @@
     <entry file="file://$PROJECT_DIR$/app/libs/PagePiling/jquery.pagepiling.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="773">
@@ -465,33 +481,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="531" column="22" lean-forward="true" selection-start-line="531" selection-start-column="22" selection-end-line="531" selection-end-column="22" />
+        <state relative-caret-position="655">
+          <caret line="674" column="22" lean-forward="true" selection-start-line="674" selection-start-column="22" selection-end-line="674" selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1548421235946" expanded="true" signature="1823:1836" ph="..." />
+            <marker date="1548421235946" expanded="true" signature="8106:8124" ph="..." />
+            <marker date="1548421235946" expanded="true" signature="11780:11853" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        <state relative-caret-position="646">
+          <caret line="38" column="4" selection-start-line="38" selection-start-column="7" selection-end-line="40" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+    <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="264" column="21" lean-forward="true" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="514" column="47" selection-start-line="514" selection-start-column="43" selection-end-line="514" selection-end-column="47" />
           <folding>
-            <marker date="1548345427189" expanded="true" signature="1823:1836" ph="..." />
-            <marker date="1548345427189" expanded="true" signature="8080:8098" ph="..." />
-            <marker date="1548345427189" expanded="true" signature="10871:10944" ph="..." />
+            <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#1;n#div#0;n#section#4;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

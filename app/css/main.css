@@ -2354,17 +2354,18 @@ header {
       width: 6rem; } }
 
 .first-banner .person-img_left {
-  background: url(../img/den_crop.png) no-repeat 0 100%;
+  background: url(../img/valya_black.png) no-repeat 0 100%;
   width: 50rem;
   height: 90%;
   -webkit-background-size: contain;
           background-size: contain;
   position: absolute;
-  bottom: -2%;
+  bottom: -4%;
   left: 5%; }
   @media (max-width: 1600px) {
     .first-banner .person-img_left {
-      left: 4%;
+      left: 0;
+      bottom: -3%;
       width: 40rem;
       background-position: 100% 100%; } }
   @media (max-width: 1300px) {
@@ -2372,6 +2373,9 @@ header {
       left: 5%;
       bottom: -5%;
       width: 28%; } }
+  @media only screen and (max-width: 1200px) {
+    .first-banner .person-img_left {
+      bottom: -6%; } }
   @media only screen and (max-width: 992px) {
     .first-banner .person-img_left {
       width: 30%; } }
@@ -2380,17 +2384,17 @@ header {
       bottom: -7%; } }
 
 .first-banner .person-img_right {
-  background: url(../img/valya_crop.png) no-repeat 0 50%;
+  background: url(../img/DSC_2229.png) no-repeat 0 50%;
   width: 50rem;
   height: 90%;
   right: 2%;
-  bottom: -6%;
+  bottom: 0;
   position: absolute;
   -webkit-background-size: contain;
           background-size: contain; }
   @media (max-width: 1600px) {
     .first-banner .person-img_right {
-      right: 0;
+      right: 5%;
       bottom: -2%;
       background-position: 100% 100%;
       width: 40rem; } }
@@ -2398,6 +2402,9 @@ header {
     .first-banner .person-img_right {
       width: 28%;
       bottom: -5%; } }
+  @media only screen and (max-width: 1200px) {
+    .first-banner .person-img_right {
+      bottom: 0; } }
   @media only screen and (max-width: 992px) {
     .first-banner .person-img_right {
       width: 30%; } }
@@ -2767,17 +2774,17 @@ header {
       font-size: 14px;
       padding-bottom: 1rem; } }
 
-@media only screen and (max-width: 992px) {
-  .team-descript {
-    width: 90%; } }
-
-@media only screen and (max-width: 768px) {
-  .team-descript {
-    width: 80%; } }
-
-@media only screen and (max-width: 576px) {
-  .team-descript {
-    width: 90%; } }
+.team-descript {
+  color: #fff; }
+  @media only screen and (max-width: 992px) {
+    .team-descript {
+      width: 90%; } }
+  @media only screen and (max-width: 768px) {
+    .team-descript {
+      width: 80%; } }
+  @media only screen and (max-width: 576px) {
+    .team-descript {
+      width: 90%; } }
 
 .team_content {
   width: 70%;
@@ -2837,9 +2844,14 @@ header {
         font-size: 12px; } }
 
 .team_avatar {
-  background-color: #cccccc;
+  background-color: #cecece;
   width: 88px;
-  height: 88px; }
+  height: 88px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  .team_avatar img {
+    -webkit-border-radius: 50%;
+            border-radius: 50%; }
   @media only screen and (max-width: 992px) {
     .team_avatar {
       width: 64px;
@@ -2895,7 +2907,7 @@ header {
     margin-left: 14%; } }
 
 .contacts_descript {
-  color: #fff;
+  color: #000;
   font-family: "Roboto-Regular";
   font-size: 24px;
   padding: 2rem 0; }

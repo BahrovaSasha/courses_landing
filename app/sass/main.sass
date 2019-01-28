@@ -321,42 +321,46 @@ header
 		width: 6rem
 .first-banner
 	.person-img_left
-		background: url(../img/den_crop.png) no-repeat 0 100%
+		background: url(../img/valya_black.png) no-repeat 0 100%
 		width: 50rem
 		height: 90%
 		background-size: contain
 		position: absolute
-		bottom: -2%
+		bottom: -4%
 		left: 5%
 		@include rwd(1600)
-			left: 4%
-			//bottom: 0
+			left: 0
+			bottom: -3%
 			width: 40rem
 			background-position: 100% 100%
 		@include rwd(1300)
 			left: 5%
 			bottom: -5%
 			width: 28%
+		@include xl
+			bottom: -6%
 		@include lg
 			width: 30%
 		@include md
 			bottom: -7%
 	.person-img_right
-		background: url(../img/valya_crop.png) no-repeat 0 50%
+		background: url(../img/DSC_2229.png) no-repeat 0 50%
 		width: 50rem
 		height: 90%
 		right: 2%
-		bottom: -6%
+		bottom: 0
 		position: absolute
 		background-size: contain
 		@include rwd(1600)
-			right: 0
+			right: 5%
 			bottom: -2%
 			background-position: 100% 100%
 			width: 40rem
 		@include rwd(1300)
 			width: 28%
 			bottom: -5%
+		@include xl
+			bottom: 0
 		@include lg
 			width: 30%
 		@include md
@@ -636,6 +640,7 @@ header
 
 
 .team-descript
+	color: #fff
 	@include lg
 		width: 90%
 	@include md
@@ -676,10 +681,12 @@ header
 		@include lg
 			font-size: 12px
 .team_avatar
-	background-color: #cccccc
+	background-color: #cecece
 	width: 88px
 	height: 88px
-	//border-radius: 50%
+	border-radius: 50%
+	img
+		border-radius: 50%
 	@include lg
 		width: 64px
 		height: 64px
@@ -725,7 +732,7 @@ header
 		padding-top: 0
 		margin-left: 14%
 .contacts_descript
-	color: #fff
+	color: #000
 	font-family: $nav-font
 	font-size: 24px
 	padding: 2rem 0

@@ -2036,6 +2036,16 @@ header {
   z-index: 19;
   height: 288px;
   left: 0; }
+  @media only screen and (max-width: 1200px) {
+    .logo {
+      width: 10rem; } }
+  @media only screen and (max-width: 992px) {
+    .logo {
+      width: 9rem; } }
+  @media only screen and (max-width: 768px) {
+    .logo {
+      height: 200px;
+      width: 6.4rem; } }
 
 .logo-wrap {
   position: relative;
@@ -2047,6 +2057,10 @@ header {
     position: absolute;
     right: 0;
     bottom: 0; }
+    @media only screen and (max-width: 768px) {
+      .logo-wrap img {
+        width: 40px;
+        height: auto; } }
 
 .lang-top {
   display: -webkit-box;
@@ -2372,16 +2386,24 @@ header {
     .first-banner .person-img_left {
       left: 5%;
       bottom: -5%;
-      width: 28%; } }
+      width: 28.4rem; } }
   @media only screen and (max-width: 1200px) {
     .first-banner .person-img_left {
-      bottom: -6%; } }
+      bottom: -7%;
+      -webkit-background-size: cover;
+              background-size: cover;
+      background-position: left top; } }
   @media only screen and (max-width: 992px) {
     .first-banner .person-img_left {
-      width: 30%; } }
+      width: 26rem;
+      left: 2%;
+      background-position: right top; } }
   @media only screen and (max-width: 768px) {
     .first-banner .person-img_left {
-      bottom: -7%; } }
+      background-position: right top;
+      bottom: -8%;
+      left: 0;
+      width: 24rem; } }
 
 .first-banner .person-img_right {
   background: url(../img/DSC_2229.png) no-repeat 0 50%;
@@ -2400,17 +2422,23 @@ header {
       width: 40rem; } }
   @media (max-width: 1300px) {
     .first-banner .person-img_right {
-      width: 28%;
-      bottom: -5%; } }
+      width: 30rem;
+      bottom: -4%; } }
   @media only screen and (max-width: 1200px) {
     .first-banner .person-img_right {
-      bottom: 0; } }
+      bottom: -4%;
+      -webkit-background-size: cover;
+              background-size: cover;
+      right: 0;
+      background-position: left top; } }
   @media only screen and (max-width: 992px) {
     .first-banner .person-img_right {
-      width: 30%; } }
+      width: 26rem; } }
   @media only screen and (max-width: 768px) {
     .first-banner .person-img_right {
-      bottom: -7%; } }
+      bottom: -7%;
+      width: 21rem;
+      right: -5%; } }
 
 .first-banner_content {
   margin-left: 36%;
@@ -2424,8 +2452,12 @@ header {
       padding-bottom: 5rem; } }
   @media only screen and (max-width: 992px) {
     .first-banner_content {
-      margin-left: 34%;
-      padding-bottom: 0; } }
+      margin-left: 36%;
+      padding-bottom: 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .first-banner_content {
+      margin-left: 40%;
+      padding-bottom: 8rem; } }
   .first-banner_content h1 {
     font-family: "YesevaOne";
     font-size: 100px;
@@ -2441,7 +2473,7 @@ header {
         font-size: 70px; } }
     @media only screen and (max-width: 992px) {
       .first-banner_content h1 {
-        font-size: 64px; } }
+        font-size: 56px; } }
     @media only screen and (max-width: 768px) {
       .first-banner_content h1 {
         font-size: 44px; } }
@@ -2456,7 +2488,8 @@ header {
         font-size: 18px; } }
     @media only screen and (max-width: 992px) {
       .first-banner_content .first-banner_descript {
-        width: 50%; } }
+        width: 50%;
+        font-size: 18px; } }
     @media only screen and (max-width: 768px) {
       .first-banner_content .first-banner_descript {
         font-size: 16px;
@@ -2551,9 +2584,6 @@ header {
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 4rem; }
-    @media (max-width: 1400px) {
-      .services_content .one-service {
-        padding-bottom: 0; } }
     @media only screen and (max-width: 1200px) {
       .services_content .one-service {
         padding: 0 8px 10px; } }
@@ -2775,7 +2805,7 @@ header {
       padding-bottom: 1rem; } }
 
 .team-descript {
-  color: #fff; }
+  color: #000; }
   @media only screen and (max-width: 992px) {
     .team-descript {
       width: 90%; } }
@@ -2787,9 +2817,8 @@ header {
       width: 90%; } }
 
 .team_content {
-  width: 70%;
-  margin-right: 30%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
   padding: 8rem 0;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;

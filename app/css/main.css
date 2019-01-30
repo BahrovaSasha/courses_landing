@@ -2030,37 +2030,30 @@ header {
       height: 60px; } }
 
 .logo {
-  width: 12rem;
+  width: 8.4rem;
   background-color: #FDC229;
   position: fixed;
   z-index: 19;
-  height: 288px;
-  left: 0; }
+  height: auto;
+  left: 0;
+  line-height: 0; }
   @media only screen and (max-width: 1200px) {
     .logo {
-      width: 10rem; } }
+      width: 6.4rem; } }
   @media only screen and (max-width: 992px) {
     .logo {
-      width: 9rem; } }
+      width: 6.4rem; } }
   @media only screen and (max-width: 768px) {
     .logo {
-      height: 200px;
-      width: 6.4rem; } }
+      width: 5rem; } }
 
 .logo-wrap {
-  position: relative;
   width: inherit;
   height: inherit; }
   .logo-wrap img {
-    width: 54px;
-    height: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0; }
-    @media only screen and (max-width: 768px) {
-      .logo-wrap img {
-        width: 40px;
-        height: auto; } }
+    color: #323232;
+    width: 100%;
+    height: auto; }
 
 .lang-top {
   display: -webkit-box;
@@ -2071,7 +2064,7 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 14rem;
+  margin-left: 10rem;
   height: 100%; }
   @media only screen and (max-width: 992px) {
     .lang-top {
@@ -2369,95 +2362,105 @@ header {
 
 .first-banner .person-img_left {
   background: url(../img/valya_black.png) no-repeat 0 100%;
-  width: 50rem;
+  width: 30%;
   height: 90%;
   -webkit-background-size: contain;
           background-size: contain;
   position: absolute;
-  bottom: -4%;
+  bottom: -2%;
   left: 5%; }
   @media (max-width: 1600px) {
     .first-banner .person-img_left {
-      left: 0;
+      left: 2%;
       bottom: -3%;
       width: 40rem;
       background-position: 100% 100%; } }
-  @media (max-width: 1300px) {
-    .first-banner .person-img_left {
-      left: 5%;
-      bottom: -5%;
-      width: 28.4rem; } }
   @media only screen and (max-width: 1200px) {
     .first-banner .person-img_left {
-      bottom: -7%;
+      bottom: -9%;
+      width: 40%;
       -webkit-background-size: cover;
               background-size: cover;
-      background-position: left top; } }
+      background-position: right top;
+      left: 0; } }
   @media only screen and (max-width: 992px) {
     .first-banner .person-img_left {
-      width: 26rem;
-      left: 2%;
+      width: 40%;
+      left: 0;
+      height: 80%;
       background-position: right top; } }
   @media only screen and (max-width: 768px) {
     .first-banner .person-img_left {
       background-position: right top;
       bottom: -8%;
       left: 0;
-      width: 24rem; } }
+      width: 40%; } }
+  @media only screen and (max-width: 576px) {
+    .first-banner .person-img_left {
+      bottom: 0;
+      width: 50%;
+      height: 70%; } }
+  @media only screen and (max-width: 350px) {
+    .first-banner .person-img_left {
+      display: none; } }
 
 .first-banner .person-img_right {
-  background: url(../img/DSC_2229.png) no-repeat 0 50%;
-  width: 50rem;
+  background: url(../img/DSC_2229.png) no-repeat 0 100%;
+  width: 30%;
   height: 90%;
-  right: 2%;
+  right: 5%;
   bottom: 0;
   position: absolute;
   -webkit-background-size: contain;
           background-size: contain; }
   @media (max-width: 1600px) {
     .first-banner .person-img_right {
-      right: 5%;
-      bottom: -2%;
       background-position: 100% 100%;
-      width: 40rem; } }
-  @media (max-width: 1300px) {
-    .first-banner .person-img_right {
-      width: 30rem;
-      bottom: -4%; } }
+      width: 44rem; } }
   @media only screen and (max-width: 1200px) {
     .first-banner .person-img_right {
-      bottom: -4%;
+      width: 40%;
+      bottom: -8%;
       -webkit-background-size: cover;
               background-size: cover;
       right: 0;
       background-position: left top; } }
   @media only screen and (max-width: 992px) {
     .first-banner .person-img_right {
-      width: 26rem; } }
+      width: 40%;
+      height: 80%; } }
   @media only screen and (max-width: 768px) {
     .first-banner .person-img_right {
       bottom: -7%;
-      width: 21rem;
-      right: -5%; } }
+      width: 40%; } }
+  @media only screen and (max-width: 576px) {
+    .first-banner .person-img_right {
+      bottom: 0;
+      width: 50%;
+      height: 70%; } }
+  @media only screen and (max-width: 350px) {
+    .first-banner .person-img_right {
+      display: none; } }
 
 .first-banner_content {
   margin-left: 36%;
   padding-bottom: 10rem; }
-  @media (max-width: 1600px) {
-    .first-banner_content {
-      margin-left: 32%; } }
-  @media (max-width: 1300px) {
-    .first-banner_content {
-      margin-left: 36%;
-      padding-bottom: 5rem; } }
   @media only screen and (max-width: 992px) {
     .first-banner_content {
       margin-left: 36%;
-      padding-bottom: 2rem; } }
+      padding-bottom: 4rem; } }
   @media only screen and (max-width: 768px) {
     .first-banner_content {
       margin-left: 40%;
       padding-bottom: 8rem; } }
+  @media only screen and (max-width: 576px) {
+    .first-banner_content {
+      margin-left: 33%;
+      padding-bottom: 30rem; } }
+  @media only screen and (max-width: 350px) {
+    .first-banner_content {
+      padding-bottom: 8rem;
+      margin-left: 28%; } }
   .first-banner_content h1 {
     font-family: "YesevaOne";
     font-size: 100px;
@@ -2477,15 +2480,18 @@ header {
     @media only screen and (max-width: 768px) {
       .first-banner_content h1 {
         font-size: 44px; } }
+    @media only screen and (max-width: 576px) {
+      .first-banner_content h1 {
+        font-size: 36px; } }
+    @media only screen and (max-width: 350px) {
+      .first-banner_content h1 {
+        font-size: 44px; } }
   .first-banner_content .first-banner_descript {
     font-family: "Roboto-Light";
     font-size: 22px;
     color: #fff;
     padding-top: 24px;
     margin: 0; }
-    @media (max-width: 1300px) {
-      .first-banner_content .first-banner_descript {
-        font-size: 18px; } }
     @media only screen and (max-width: 992px) {
       .first-banner_content .first-banner_descript {
         width: 50%;
@@ -2497,7 +2503,7 @@ header {
 
 .section_content {
   margin-left: 20%;
-  padding-top: 10rem;
+  padding-top: 13rem;
   width: 40%; }
   @media (max-width: 1300px) {
     .section_content {
@@ -2919,8 +2925,8 @@ header {
       display: none; } }
 
 .contacts_content {
-  width: 70%;
-  margin-left: 25%; }
+  width: 80%;
+  margin: 0 auto; }
   @media only screen and (max-width: 768px) {
     .contacts_content {
       margin-left: 14%;
@@ -2964,6 +2970,7 @@ header {
 .callback-form {
   width: 100%;
   min-width: 254px;
+  max-width: 480px;
   height: auto;
   display: -webkit-box;
   display: -webkit-flex;

@@ -101,38 +101,42 @@ header
 	//	height: 6rem
 
 .logo
-	width: 12rem
+	width: 8.4rem
 	background-color: $accent
 	position: fixed
 	z-index: 19
-	height: 288px
+	height: auto
 	left: 0
+	line-height: 0
+	//@include xl
+	//	width: 10rem
+	//@include lg
+	//	width: 9rem
 	@include xl
-		width: 10rem
-	@include lg
-		width: 9rem
-	@include md
-		height: 200px
 		width: 6.4rem
+	@include lg
+		//height: 200px
+		width: 6.4rem
+	@include md
+		width: 5rem
 .logo-wrap
-	position: relative
+	//position: relative
 	width: inherit
 	height: inherit
 	img
-		width: 54px
+		color: $dark
+		width: 100%
 		height: auto
-		position: absolute
-		right: 0
-		bottom: 0
+		//position: absolute
+		//left: 0
+		//top: 0
 		//transform: rotate(-90deg)
-		@include md
-			width: 40px
-			height: auto
+
 
 .lang-top
 	display: flex
 	align-items: center
-	margin-left: 14rem
+	margin-left: 10rem
 	height: 100%
 	@include lg
 		margin-left: 10rem
@@ -334,75 +338,98 @@ header
 .first-banner
 	.person-img_left
 		background: url(../img/valya_black.png) no-repeat 0 100%
-		width: 50rem
+		width: 30%
 		height: 90%
 		background-size: contain
 		position: absolute
-		bottom: -4%
+		bottom: -2%
 		left: 5%
 		@include rwd(1600)
-			left: 0
+			left: 2%
 			bottom: -3%
 			width: 40rem
 			background-position: 100% 100%
-		@include rwd(1300)
-			left: 5%
-			bottom: -5%
-			width: 28.4rem
+		//@include rwd(1300)
+		//	left: 5%
+		//	bottom: -5%
+		//	width: 28.4rem
 		@include xl
-			bottom: -7%
+			bottom: -9%
+			width: 40%
 			background-size: cover
-			background-position: left top
+			background-position: right top
+			left: 0
 		@include lg
-			width: 26rem
-			left: 2%
+			width: 40%
+			left: 0
+			height: 80%
 			background-position: right top
 		@include md
 			background-position: right top
 			bottom: -8%
 			left: 0
-			width: 24rem
+			width: 40%
+		@include sm
+			bottom: 0
+			width: 50%
+			height: 70%
+		@include xs
+			display: none
 	.person-img_right
-		background: url(../img/DSC_2229.png) no-repeat 0 50%
-		width: 50rem
+		background: url(../img/DSC_2229.png) no-repeat 0 100%
+		width: 30%
 		height: 90%
-		right: 2%
+		right: 5%
 		bottom: 0
 		position: absolute
 		background-size: contain
 		@include rwd(1600)
-			right: 5%
-			bottom: -2%
+			//right: 5%
+			//bottom: -2%
 			background-position: 100% 100%
-			width: 40rem
-		@include rwd(1300)
-			width: 30rem
-			bottom: -4%
+			width: 44rem
+		//@include rwd(1300)
+		//	width: 30rem
+		//	bottom: -4%
 		@include xl
-			bottom: -4%
+			width: 40%
+			bottom: -8%
 			background-size: cover
 			right: 0
 			background-position: left top
 		@include lg
-			width: 26rem
+			width: 40%
+			height: 80%
 		@include md
 			bottom: -7%
-			width: 21rem
-			right: -5%
+			width: 40%
+		@include sm
+			bottom: 0
+			width: 50%
+			height: 70%
+		@include xs
+			display: none
+
 .first-banner_content
 	margin-left: 36%
 	padding-bottom: 10rem
-	@include rwd(1600)
-		margin-left: 32%
-	@include rwd(1300)
-		margin-left: 36%
-		padding-bottom: 5rem
+	//@include rwd(1600)
+	//	margin-left: 34%
+	//@include rwd(1300)
+	//	margin-left: 38%
+	//	padding-bottom: 5rem
 	@include lg
 		margin-left: 36%
-		padding-bottom: 2rem
+		padding-bottom: 4rem
 	@include md
 		margin-left: 40%
 		padding-bottom: 8rem
+	@include sm
+		margin-left: 33%
+		padding-bottom: 30rem
+	@include xs
+		padding-bottom: 8rem
+		margin-left: 28%
 	h1
 		font-family: $header-font
 		font-size: 100px
@@ -418,23 +445,28 @@ header
 			font-size: 56px
 		@include md
 			font-size: 44px
+		@include sm
+			font-size: 36px
+		@include xs
+			font-size: 44px
 	.first-banner_descript
 		font-family: $default-font
 		font-size: 22px
 		color: #fff
 		padding-top: 24px
 		margin: 0
-		@include rwd(1300)
-			font-size: 18px
+		//@include rwd(1300)
+		//	font-size: 18px
 		@include lg
 			width: 50%
 			font-size: 18px
 		@include md
 			font-size: 16px
 			width: 60%
+
 .section_content
 	margin-left: 20%
-	padding-top: 10rem
+	padding-top: 13rem
 	width: 40%
 	@include rwd(1300)
 		width: 50%
@@ -744,8 +776,8 @@ header
 	@include md
 		display: none
 .contacts_content
-	width: 70%
-	margin-left: 25%
+	width: 80%
+	margin: 0 auto
 	@include md
 		margin-left: 14%
 		width: 76%
@@ -781,6 +813,7 @@ header
 .callback-form
 	width: 100%
 	min-width: 254px
+	max-width: 480px
 	height: auto
 	display: flex
 	flex-direction: column

@@ -2375,10 +2375,14 @@ header {
       bottom: -3%;
       width: 40rem;
       background-position: 100% 100%; } }
+  @media (max-width: 1300px) {
+    .first-banner .person-img_left {
+      height: 85%; } }
   @media only screen and (max-width: 1200px) {
     .first-banner .person-img_left {
+      height: 90%;
       bottom: -9%;
-      width: 40%;
+      width: 30%;
       -webkit-background-size: cover;
               background-size: cover;
       background-position: right top;
@@ -2417,9 +2421,13 @@ header {
     .first-banner .person-img_right {
       background-position: 100% 100%;
       width: 44rem; } }
+  @media (max-width: 1300px) {
+    .first-banner .person-img_right {
+      height: 85%; } }
   @media only screen and (max-width: 1200px) {
     .first-banner .person-img_right {
-      width: 40%;
+      height: 90%;
+      width: 30%;
       bottom: -8%;
       -webkit-background-size: cover;
               background-size: cover;
@@ -2444,11 +2452,13 @@ header {
 
 .first-banner_content {
   margin-left: 36%;
-  padding-bottom: 10rem; }
+  padding-bottom: 10rem;
+  padding-top: 13rem; }
   @media only screen and (max-width: 992px) {
     .first-banner_content {
       margin-left: 36%;
-      padding-bottom: 4rem; } }
+      padding-bottom: 4rem;
+      padding-top: 0; } }
   @media only screen and (max-width: 768px) {
     .first-banner_content {
       margin-left: 40%;
@@ -2517,7 +2527,6 @@ header {
       margin-left: 16%; } }
   @media only screen and (max-width: 576px) {
     .section_content {
-      padding-top: 7rem;
       margin-left: 18%; } }
 
 .section_header {
@@ -2628,6 +2637,7 @@ header {
 .works_content {
   width: 80%;
   height: 100%;
+  min-height: 480px;
   padding: 10rem 0;
   margin: 0 auto;
   display: -webkit-box;
@@ -2647,6 +2657,7 @@ header {
       width: 70%;
       height: auto; } }
   .works_content .first-work {
+    min-height: 50rem;
     height: 100%;
     width: 40%;
     background-color: #ccc; }
@@ -2656,6 +2667,7 @@ header {
         height: 40%;
         min-height: 18rem; } }
   .works_content .next-works {
+    min-height: 50rem;
     width: 60%;
     height: 100%;
     display: -webkit-box;

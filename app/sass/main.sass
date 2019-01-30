@@ -75,10 +75,10 @@ button
 
 
 //.horizontal-content
-//  height: 100vh
-//  display: flex
-//  flex-direction: row
-//
+//	padding-top: 10rem
+//	padding-bottom: 10rem
+//	height: 100%
+//	width: 100%
 //.first-banner
 //  background-color: $dark
 //  height: 100%
@@ -349,13 +349,12 @@ header
 			bottom: -3%
 			width: 40rem
 			background-position: 100% 100%
-		//@include rwd(1300)
-		//	left: 5%
-		//	bottom: -5%
-		//	width: 28.4rem
+		@include rwd(1300)
+			height: 85%
 		@include xl
+			height: 90%
 			bottom: -9%
-			width: 40%
+			width: 30%
 			background-size: cover
 			background-position: right top
 			left: 0
@@ -388,11 +387,11 @@ header
 			//bottom: -2%
 			background-position: 100% 100%
 			width: 44rem
-		//@include rwd(1300)
-		//	width: 30rem
-		//	bottom: -4%
+		@include rwd(1300)
+			height: 85%
 		@include xl
-			width: 40%
+			height: 90%
+			width: 30%
 			bottom: -8%
 			background-size: cover
 			right: 0
@@ -413,6 +412,7 @@ header
 .first-banner_content
 	margin-left: 36%
 	padding-bottom: 10rem
+	padding-top: 13rem
 	//@include rwd(1600)
 	//	margin-left: 34%
 	//@include rwd(1300)
@@ -421,6 +421,7 @@ header
 	@include lg
 		margin-left: 36%
 		padding-bottom: 4rem
+		padding-top: 0
 	@include md
 		margin-left: 40%
 		padding-bottom: 8rem
@@ -464,6 +465,7 @@ header
 			font-size: 16px
 			width: 60%
 
+
 .section_content
 	margin-left: 20%
 	padding-top: 13rem
@@ -479,7 +481,7 @@ header
 		margin-left: 16%
 		//width: 80%
 	@include sm
-		padding-top: 7rem
+		//padding-top: 7rem
 		margin-left: 18%
 .section_header
 	font-family: $header-font
@@ -571,6 +573,7 @@ header
 .works_content
 	width: 80%
 	height: 100%
+	min-height: 480px
 	padding: 10rem 0
 	margin: 0 auto
 	display: flex
@@ -581,6 +584,7 @@ header
 		width: 70%
 		height: auto
 	.first-work
+		min-height: 50rem
 		height: 100%
 		width: 40%
 		background-color: #ccc
@@ -591,6 +595,7 @@ header
 		@include sm
 			//width: 60%
 	.next-works
+		min-height: 50rem
 		width: 60%
 		height: 100%
 		display: flex
@@ -607,6 +612,7 @@ header
 			@include sm
 				flex-direction: column
 			.square-work
+				//min-height: 25rem
 				height: 100%
 				width: 400px
 				background-color: $accent
@@ -615,6 +621,7 @@ header
 					width: 100%
 					min-height: 10rem
 			.rectangle-work
+				//min-height: 25rem
 				width: 100%
 				height: 100%
 				background-color: #7e7e7e
@@ -633,9 +640,11 @@ header
 				height: 100%
 				background-color: #7e7e7e
 				width: 100%
+				//min-height: 25rem
 				@include sm
 					min-height: 18rem
 			.square-work
+				//min-height: 25rem
 				height: 100%
 				width: 400px
 				background-color: #cecece

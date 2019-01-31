@@ -75,10 +75,7 @@ button
 
 
 //.horizontal-content
-//	padding-top: 10rem
-//	padding-bottom: 10rem
-//	height: 100%
-//	width: 100%
+//	position: relative
 //.first-banner
 //  background-color: $dark
 //  height: 100%
@@ -335,6 +332,12 @@ header
 		width: 8rem
 	@include xs
 		width: 6rem
+
+
+//.section-scroll_wrapper
+//	margin-top: 10rem
+//	height: 500px
+//	overflow-y: scroll
 .first-banner
 	.person-img_left
 		background: url(../img/valya_black.png) no-repeat 0 100%
@@ -465,11 +468,23 @@ header
 			font-size: 16px
 			width: 60%
 
-
+//.top-cover
+//	//display: none
+//	@include sm
+//		background-color: #fff
+//		height: 13rem
+//		width: 100%
+//		z-index: 100
+//		position: fixed
+//		top: 0
+//.section-scroll_wrapper
+//	//padding-top: 13rem
+//	overflow-y: scroll
 .section_content
 	margin-left: 20%
 	padding-top: 13rem
 	width: 40%
+	//box-sizing: content-box
 	@include rwd(1300)
 		width: 50%
 	@include xl
@@ -481,7 +496,7 @@ header
 		margin-left: 16%
 		//width: 80%
 	@include sm
-		//padding-top: 7rem
+		//padding-top: 0
 		margin-left: 18%
 .section_header
 	font-family: $header-font
@@ -971,4 +986,37 @@ footer
 			background: transparent
 
 
-
+.project-content
+	width: 100%
+	margin: 0 auto
+	overflow-y: scroll
+.project-banner
+	height: 30rem
+	width: 80%
+	background-color: #eee
+	margin: 2rem auto
+.task-content
+	margin: 0 auto 2rem
+	width: 60%
+.project-subhead
+	font-family: $header-font
+	color: $dark
+	font-size: 40px
+	padding-bottom: 2rem
+	margin: 0
+.task-descript
+	margin: 0
+	font-size: 18px
+.technical-descript
+	width: 100%
+	padding: 4rem 0
+	background-color: #eee
+	.project-subhead
+		color: $accent
+		width: 60%
+		margin: 0 auto
+	.technical-wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 80%

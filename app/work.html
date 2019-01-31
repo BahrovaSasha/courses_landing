@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>YBS - Your Business Site</title>
+    <meta name="description" content="YBS - Your Business Site webstudio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-wrap">
+                <div class=""></div>
+                <img src="../img/logo_ybs.svg" alt="YBS">
+                <!--<svg>-->
+                    <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-ybs"></use>-->
+                <!--</svg>-->
+            </div>
+        </div>
+        <div class="lang-top">
+            <button type="button" class="one-lang active">
+                <p>ru</p>
+            </button>
+            <button type="button" class="one-lang">
+                <p>en</p>
+            </button>
+            <button type="button" class="one-lang">
+                <p>es</p>
+            </button>
+        </div>
+        <div class="menu-right">
+            <ul class="myMenu-list" id="myMenu">
+                <li data-menuanchor="main" class="myMenu-item">
+                    <a href="#main">Главная</a>
+                </li>
+                <li data-menuanchor="services" class="myMenu-item">
+                    <a href="#services">Услуги</a>
+                </li>
+                <li data-menuanchor="works" class="myMenu-item active">
+                    <a href="#works">Работы</a>
+                </li>
+                <li data-menuanchor="team" class="myMenu-item">
+                    <a href="#team">Наша команда</a>
+                </li>
+                <li data-menuanchor="#blog" class="myMenu-item">
+                    <a href="#blog">Блог</a>
+                </li>
+                <li data-menuanchor="contact" class="myMenu-item">
+                    <a href="#contact">Контакты</a>
+                </li>
+            </ul>
+            <button class="hmbrgr-menu" type="button" id="hmbrgr">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <a href="#popup-call" class="call">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <main class="one-project pp-scrollable">
+        <div class="project-content">
+            <div class="section_content">
+                <h3 class="section_header">Ukrainian Real Brides</h3>
+                <p class="section_descript">Сайт знакомств и общения в сети</p>
+            </div>
+            <div class="project-banner"></div>
+            <div class="task-content">
+                <h4 class="project-subhead">Задача</h4>
+                <p class="task-descript">This service is only for serious people, who are ready for changes in their life and who have a strong intention to create a happy relationship. Today people value the personal touch and want the sense of community a matchmaker can bring into their lives. Most of the people have a hard time seeking help when it comes to relationships.</p>
+            </div>
+            <div class="technical-descript">
+                <h4 class="project-subhead">Технические особенности</h4>
+                <div class="technical-wrapper">
+                    <div class="one-tip">
+                        <div class="tech-icon"></div>
+                        <p>Технический нюанс</p>
+                    </div>
+                    <div class="one-tip">
+                        <div class="tech-icon"></div>
+                        <p>Технический нюанс</p>
+                    </div>
+                    <div class="one-tip">
+                        <div class="tech-icon"></div>
+                        <p>Технический нюанс</p>
+                    </div>
+                    <div class="one-tip">
+                        <div class="tech-icon"></div>
+                        <p>Технический нюанс</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-functions">
+                <h4 class="project-subhead">Функционал</h4>
+                <div class="function-wrapper">
+                    <div class="one-function">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="socials">
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="rights">YBS 2015-2018 © All rights reserved.</p>
+    </footer>
+
+    <div class="callback-modal" id="popup-call">
+        <div class="callback-modal_content">
+
+            <form class="callback-form">
+                <button class="close-callback">&#10006</button>
+                <h4 class="form-header">Мы вам перезвоним</h4>
+                <span class="error-field"></span>
+                <div class="contacts_field">
+                    <input id="name" type="text" class="contacts_field-input call-name" placeholder="Name" required style="border: 0;">
+                </div>
+                <div class="contacts_field">
+                    <input id="tel" type="tel" class="contacts_field-input call-phone" placeholder="Telephone" required style="border: 0;">
+                </div>
+                <div class="button-wrap">
+                    <button type="button" class="call-request">Заказать звонок</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/scripts.min.js?>"></script>
+    <script src="js/common.js?>"></script>
+</body>
+</html>

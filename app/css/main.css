@@ -3196,3 +3196,52 @@ footer {
       right: 6px;
       color: #323232;
       background: transparent; }
+
+.project-content {
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: scroll; }
+
+.project-banner {
+  height: 30rem;
+  width: 80%;
+  background-color: #eee;
+  margin: 2rem auto; }
+
+.task-content {
+  margin: 0 auto 2rem;
+  width: 60%; }
+
+.project-subhead {
+  font-family: "YesevaOne";
+  color: #323232;
+  font-size: 40px;
+  padding-bottom: 2rem;
+  margin: 0; }
+
+.task-descript {
+  margin: 0;
+  font-size: 18px; }
+
+.technical-descript {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #eee; }
+  .technical-descript .project-subhead {
+    color: #FDC229;
+    width: 60%;
+    margin: 0 auto; }
+  .technical-descript .technical-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%; }

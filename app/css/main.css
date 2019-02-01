@@ -3197,6 +3197,9 @@ footer {
       color: #323232;
       background: transparent; }
 
+.one-project {
+  margin: 84px 0; }
+
 .project-content {
   width: 100%;
   margin: 0 auto;
@@ -3208,40 +3211,133 @@ footer {
   background-color: #eee;
   margin: 2rem auto; }
 
-.task-content {
-  margin: 0 auto 2rem;
-  width: 60%; }
-
 .project-subhead {
   font-family: "YesevaOne";
   color: #323232;
   font-size: 40px;
   padding-bottom: 2rem;
-  margin: 0; }
+  margin: 0 auto;
+  width: 60%;
+  font-weight: normal; }
 
 .task-descript {
-  margin: 0;
-  font-size: 18px; }
+  margin: 0 auto 4rem;
+  font-size: 18px;
+  width: 60%; }
 
-.technical-descript {
+.project-technical {
   width: 100%;
-  padding: 4rem 0;
+  padding: 6rem 0;
   background-color: #eee; }
-  .technical-descript .project-subhead {
-    color: #FDC229;
-    width: 60%;
-    margin: 0 auto; }
-  .technical-descript .technical-wrapper {
+  .project-technical .project-subhead {
+    color: #FDC229; }
+  .project-technical .technical-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 80%; }
+    width: 80%;
+    margin: 0 auto; }
+    .project-technical .technical-wrapper .one-tip {
+      padding: 0 1rem; }
+      .project-technical .technical-wrapper .one-tip .tech-icon {
+        width: 84px;
+        height: 84px;
+        background-color: #fff; }
+      .project-technical .technical-wrapper .one-tip p {
+        margin: 0;
+        font-family: "Roboto-Regular";
+        font-size: 22px;
+        padding: 1rem 0; }
+
+.project-functions {
+  width: 100%;
+  padding: 6rem 0; }
+  .project-functions .function-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto; }
+    .project-functions .function-wrapper .one-function {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 2rem 4rem;
+      border-bottom: 2px solid #eee; }
+      .project-functions .function-wrapper .one-function .one-function_wrap {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        .project-functions .function-wrapper .one-function .one-function_wrap .function-icon {
+          width: 40px;
+          height: 40px;
+          background-color: #eee; }
+        .project-functions .function-wrapper .one-function .one-function_wrap .function-descript {
+          font-family: "Roboto-Regular";
+          font-size: 18px;
+          margin: 0;
+          padding-left: 2rem; }
+      .project-functions .function-wrapper .one-function .try-button {
+        background-color: transparent;
+        border: 2px solid #FDC229;
+        color: #FDC229;
+        font-size: 16px;
+        font-family: "Roboto-Regular";
+        line-height: normal; }
+
+.project-screens {
+  padding: 6rem 0;
+  width: 90%; }
+
+.project-link {
+  width: 100%;
+  padding: 2rem 2rem;
+  background: #FDC229;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .project-link p {
+    font-size: 22px;
+    font-family: "Roboto-Regular";
+    margin: 0; }
+  .project-link a {
+    font-size: 28px;
+    color: #fff;
+    text-decoration: underline;
+    font-family: "Roboto-Regular";
+    cursor: pointer; }

@@ -986,37 +986,113 @@ footer
 			background: transparent
 
 
+
+
+.one-project
+	margin: 84px 0
 .project-content
 	width: 100%
 	margin: 0 auto
 	overflow-y: scroll
+
 .project-banner
 	height: 30rem
 	width: 80%
 	background-color: #eee
 	margin: 2rem auto
 .task-content
-	margin: 0 auto 2rem
-	width: 60%
+	//margin: 0 auto 2rem
+	//width: 60%
 .project-subhead
 	font-family: $header-font
 	color: $dark
 	font-size: 40px
 	padding-bottom: 2rem
-	margin: 0
+	margin: 0 auto
+	width: 60%
+	font-weight: normal
 .task-descript
-	margin: 0
+	margin: 0 auto 4rem
 	font-size: 18px
-.technical-descript
+	width: 60%
+.project-technical
 	width: 100%
-	padding: 4rem 0
+	padding: 6rem 0
 	background-color: #eee
 	.project-subhead
 		color: $accent
-		width: 60%
-		margin: 0 auto
 	.technical-wrapper
 		display: flex
-		justify-content: center
+		justify-content: space-between
 		align-items: center
 		width: 80%
+		margin: 0 auto
+		.one-tip
+			padding: 0 1rem
+			.tech-icon
+				width: 84px
+				height: 84px
+				background-color: #fff
+			p
+				margin: 0
+				font-family: $nav-font
+				font-size: 22px
+				padding: 1rem 0
+.project-functions
+	width: 100%
+	padding: 6rem 0
+	.function-wrapper
+		display: flex
+		//justify-content: space-between
+		//align-items: center
+		width: 80%
+		margin: 0 auto
+		.one-function
+			display: flex
+			justify-content: space-between
+			padding: 2rem 4rem
+			border-bottom: 2px solid #eee
+
+			.one-function_wrap
+				display: flex
+				align-items: center
+				flex-direction: row
+				.function-icon
+					width: 40px
+					height: 40px
+					background-color: #eee
+				.function-descript
+					font-family: $nav-font
+					font-size: 18px
+					margin: 0
+					padding-left: 2rem
+			.try-button
+				background-color: transparent
+				border: 2px solid $accent
+				color: $accent
+				font-size: 16px
+				font-family: $nav-font
+				//text-transform: uppercase
+				line-height: normal
+.project-screens
+	padding: 6rem 0
+	width: 90%
+.project-link
+	width: 100%
+	padding: 2rem 2rem
+	background: $accent
+	display: flex
+	flex-direction: column
+	align-items: center
+	p
+		font-size: 22px
+		font-family: $nav-font
+		margin: 0
+	a
+		font-size: 28px
+		color: #fff
+		text-decoration: underline
+		font-family: $nav-font
+		cursor: pointer
+
+

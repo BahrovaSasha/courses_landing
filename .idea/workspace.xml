@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae91db12-5774-4cef-80d3-7414c5f506fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/logo_ybs.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/logo_ybs.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/work.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/work.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +27,7 @@
           <entry key="project.open.time.144" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.155" value="1" />
-          <entry key="project.open.time.171" value="1" />
+          <entry key="project.open.time.171" value="2" />
           <entry key="project.open.time.183" value="1" />
           <entry key="project.open.time.184" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -47,14 +44,14 @@
           <entry key="project.open.time.85" value="1" />
           <entry key="project.open.time.88" value="1" />
           <entry key="project.open.time.94" value="1" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="30" />
+          <entry key="css" value="36" />
           <entry key="html" value="11" />
-          <entry key="js" value="7" />
+          <entry key="js" value="13" />
           <entry key="php" value="22" />
           <entry key="png" value="3" />
           <entry key="sass" value="11" />
@@ -62,50 +59,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="30" />
+          <entry key="CSS" value="36" />
           <entry key="HTML" value="11" />
           <entry key="Image" value="3" />
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="13" />
           <entry key="PHP" value="22" />
           <entry key="Sass" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1158" />
-          <entry key="html" value="4166" />
+          <entry key="css" value="1177" />
+          <entry key="html" value="4791" />
           <entry key="js" value="214" />
           <entry key="php" value="211" />
-          <entry key="sass" value="13845" />
+          <entry key="sass" value="14859" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1158" />
-          <entry key="HTML" value="4166" />
+          <entry key="CSS" value="1177" />
+          <entry key="HTML" value="4791" />
           <entry key="JavaScript" value="214" />
           <entry key="PHP" value="211" />
-          <entry key="Sass" value="13845" />
+          <entry key="Sass" value="14859" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="988" column="16" lean-forward="true" selection-start-line="988" selection-start-column="16" selection-end-line="988" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="522">
+              <caret line="988" lean-forward="true" selection-start-line="988" selection-end-line="988" />
             </state>
           </provider>
         </entry>
@@ -122,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="6239">
               <caret line="367" column="20" selection-start-line="367" selection-start-column="17" selection-end-line="367" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -134,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/work.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="102" selection-start-line="102" selection-end-line="102" />
+            <state relative-caret-position="164">
+              <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -154,14 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ul</find>
-      <find>icon</find>
-      <find>bir</find>
-      <find>first-banner_</find>
-      <find>first-banner</find>
-      <find>person-img</find>
-      <find>firs</find>
-      <find>footer</find>
       <find>content</find>
       <find>content-</find>
       <find>person-img_right</find>
@@ -184,6 +164,14 @@
       <find>main-mob</find>
       <find>.settings-drop_form-row</find>
       <find>img</find>
+      <find>footer-</find>
+      <find>footer</find>
+      <find>status-bar .credit-status a span</find>
+      <find>technical-</find>
+      <find>gift-choose span</find>
+      <find>.credits-number</find>
+      <find>span:not(.credits-number)</find>
+      <find>try</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,8 +203,6 @@
         <option value="&lt;8699c598-3d80-4fe5-9f73-ecdc1e8db5a7&gt;/application/views/matchmaking_remake/footer.php" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="&lt;8699c598-3d80-4fe5-9f73-ecdc1e8db5a7&gt;/content/user_interface/js/profiles.js" />
-        <option value="&lt;8699c598-3d80-4fe5-9f73-ecdc1e8db5a7&gt;/content/user_interface/css/all.css" />
-        <option value="&lt;8699c598-3d80-4fe5-9f73-ecdc1e8db5a7&gt;/content/user_interface/css/profiles.css" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/content/ui/css/main.css" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/application/views/ui/main.php" />
         <option value="&lt;d4a59cf7-cdb8-4163-abc6-337369029f6e&gt;/content/ui/js/common.js" />
@@ -224,8 +210,11 @@
         <option value="&lt;fb6943a5-8ea9-476a-8a2a-19efb76dd8fb&gt;/application/views/ui/footer.php" />
         <option value="&lt;fb6943a5-8ea9-476a-8a2a-19efb76dd8fb&gt;/application/views/ui/header.php" />
         <option value="&lt;fb6943a5-8ea9-476a-8a2a-19efb76dd8fb&gt;/content/ui/css/main.css" />
-        <option value="$PROJECT_DIR$/app/sass/main.sass" />
+        <option value="&lt;8699c598-3d80-4fe5-9f73-ecdc1e8db5a7&gt;/content/user_interface/css/profiles.css" />
+        <option value="&lt;8699c598-3d80-4fe5-9f73-ecdc1e8db5a7&gt;/content/user_interface/css/all.css" />
         <option value="$PROJECT_DIR$/app/work.html" />
+        <option value="&lt;8699c598-3d80-4fe5-9f73-ecdc1e8db5a7&gt;/content/user_interface/css/all-resp.css" />
+        <option value="$PROJECT_DIR$/app/sass/main.sass" />
       </list>
     </option>
   </component>
@@ -252,10 +241,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="335" />
+    <option name="y" value="46" />
     <option name="width" value="995" />
-    <option name="height" value="734" />
+    <option name="height" value="861" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -265,6 +254,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -299,7 +289,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,17 +369,18 @@
       <workItem from="1548832930816" duration="12420000" />
       <workItem from="1548849170639" duration="10767000" />
       <workItem from="1548919316671" duration="21138000" />
+      <workItem from="1549006569109" duration="14412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="366763000" />
+    <option name="totallyTimeSpent" value="381175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" weight="0.13486141" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.13486141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" sideWeight="0.5021645" side_tool="true" weight="0.15031983" />
@@ -545,16 +535,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="988" column="16" lean-forward="true" selection-start-line="988" selection-start-column="16" selection-end-line="988" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="6239">
           <caret line="367" column="20" selection-start-line="367" selection-start-column="17" selection-end-line="367" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#svg#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -567,8 +550,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/work.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        <state relative-caret-position="164">
+          <caret line="68" column="14" lean-forward="true" selection-start-line="68" selection-start-column="14" selection-end-line="68" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="988" lean-forward="true" selection-start-line="988" selection-end-line="988" />
         </state>
       </provider>
     </entry>

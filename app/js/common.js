@@ -2,13 +2,13 @@ $(document).ready(function() {
     $('#pagepiling').pagepiling({
         menu: '#myMenu',
         direction: 'horizontal',
-        verticalCentered: true,
+        verticalCentered: false,
         sectionsColor: ['#323232', '#fff', '#323232', '#fff', '#323232', '#fff'],
         anchors: ['main', 'services', 'works', 'team', 'blog', 'contact'],
         scrollingSpeed: 700,
         easing: 'swing',
-        loopBottom: false,
-        loopTop: false,
+        loopBottom: true,
+        loopTop: true,
         css3: true,
         navigation: false,
             // {
@@ -17,7 +17,7 @@ $(document).ready(function() {
             // 'position': 'right',
             // 'tooltips': ['section1', 'section2', 'section3', 'section4']
         // },
-        normalScrollElements: null,
+        normalScrollElements: '.section-scroll_wrapper, .onework-modal',
         normalScrollElementTouchThreshold: 5,
         touchSensitivity: 5,
         keyboardScrolling: true,
@@ -35,6 +35,14 @@ $(document).ready(function() {
         $('.myMenu-list').toggleClass('myMenu-mob');
 
         
+    });
+    $('.first-work').click(function(){
+        $('.onework-modal.works_content').addClass('active');
+        $('body').addClass('fixed');
+    });
+    $('.close-onework').click(function(){
+        $('.onework-modal.works_content').removeClass('active');
+        $('body').removeClass('fixed');
     });
     // $('call').click(function(){
     //     $('callback-modal').toggleClass('active');

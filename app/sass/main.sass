@@ -18,7 +18,8 @@
 *::-webkit-input-placeholder
 	color: #999
 	opacity: 1
-
+*::-webkit-scrollbar
+	display: none
 *:-moz-placeholder
 	color: #999
 	opacity: 1
@@ -65,6 +66,10 @@ body
 	img
     	max-width: 100%
     	height: auto
+
+.fixed
+	position: fixed
+	width: 100%
 .logo-ybs
 	display: none
 .services-icons
@@ -76,10 +81,9 @@ button
 
 //.horizontal-content
 //	position: relative
-//.first-banner
-//  background-color: $dark
-//  height: 100%
-//  width: 100vw
+.first-banner
+	display: flex
+	align-items: center
 
 header
 	position: fixed
@@ -334,10 +338,8 @@ header
 		width: 6rem
 
 
-//.section-scroll_wrapper
-//	margin-top: 10rem
-//	height: 500px
-//	overflow-y: scroll
+
+
 .first-banner
 	.person-img_left
 		background: url(../img/valya_black.png) no-repeat 0 100%
@@ -430,7 +432,7 @@ header
 		padding-bottom: 8rem
 	@include sm
 		margin-left: 33%
-		padding-bottom: 30rem
+		padding-bottom: 20rem
 	@include xs
 		padding-bottom: 8rem
 		margin-left: 28%
@@ -462,11 +464,13 @@ header
 		//@include rwd(1300)
 		//	font-size: 18px
 		@include lg
-			width: 50%
+			//width: 80%
 			font-size: 18px
 		@include md
 			font-size: 16px
 			width: 60%
+		@include sm
+			width: 80%
 
 //.top-cover
 //	//display: none
@@ -480,9 +484,24 @@ header
 //.section-scroll_wrapper
 //	//padding-top: 13rem
 //	overflow-y: scroll
+.section-scroll_wrapper
+	margin: 13rem 0 8.4rem
+	height: calc(100vh - 21.4rem)
+	width: 100vw
+	min-height: 300px
+	overflow-y: scroll
+	overflow-x: hidden
+	//z-index: 10
+	@include lg
+		margin: 12rem 0 7.4rem
+		height: calc(100vh - 19.4rem)
+	@include md
+		margin: 10rem 0 6rem
+		height: calc(100vh - 16rem)
+
 .section_content
 	margin-left: 20%
-	padding-top: 13rem
+	//padding-top: 3rem
 	width: 40%
 	//box-sizing: content-box
 	@include rwd(1300)
@@ -499,6 +518,7 @@ header
 		//padding-top: 0
 		margin-left: 18%
 .section_header
+	padding-top: 2rem
 	font-family: $header-font
 	font-size: 64px
 	font-weight: normal
@@ -534,21 +554,21 @@ header
 .services_content
 	width: 80%
 	margin-left: 10%
-	padding: 6rem 0
-	margin-bottom: 84px
+	padding: 1rem 0
+	//margin-bottom: 84px
 	@include rwd(1400)
-		padding: 2rem 0 8.4rem
+		//padding: 2rem 0 8.4rem
 	@include xl
 		width: 90%
 		margin: 0 auto
 	@include lg
 		width: 96%
 	@include md
-		padding: 2rem 0
+		//padding: 2rem 0
 	@include sm
 		width: 70%
 	@include xs
-		padding: 1rem 0
+		//padding: 1rem 0
 	.one-service
 		display: flex
 		align-items: center
@@ -587,19 +607,25 @@ header
 				font-size: 14px
 .works_content
 	width: 80%
-	height: 100%
-	min-height: 480px
-	padding: 10rem 0
-	margin: 0 auto
+	//height: 100%
+	//min-height: 480px
+	//padding: 10rem 0
+	//margin: 0 auto
+	margin: 10rem 0 10rem 10%
 	display: flex
+	//justify-content: center
+	height: calc(100vh - 20rem)
+	position: relative
 	@include lg
-		width: 68%
+		//width: 80%
+		//margin-left: 10%
 		flex-direction: column
 	@include sm
-		width: 70%
-		height: auto
+		//width: 70%
+		//margin-left: 15%
+		//height: auto
 	.first-work
-		min-height: 50rem
+		min-height: 40rem
 		height: 100%
 		width: 40%
 		background-color: #ccc
@@ -610,13 +636,15 @@ header
 		@include sm
 			//width: 60%
 	.next-works
-		min-height: 50rem
+		//min-height: 40rem
 		width: 60%
 		height: 100%
 		display: flex
 		flex-direction: column
 		@include lg
 			width: 100%
+			height: auto
+			//min-height: 50rem
 		.top-works
 			height: 50%
 			width: 100%
@@ -666,6 +694,33 @@ header
 				@include sm
 					width: 100%
 					min-height: 18rem
+
+.onework-modal.works_content
+	display: none
+	//transition: .4s linear
+.onework-modal.works_content.active
+	display: block
+	position: absolute
+	z-index: 100
+	background-color: #fff
+	overflow-y: scroll
+	overflow-x: hidden
+	//transition: .4s linear
+	.close-onework
+		background: transparent
+		left: 90%
+		top: 10rem
+		font-size: 18px
+		position: fixed
+		color: #fff
+		opacity: .6
+		//@include md
+		//	left: 85%
+
+
+
+
+
 .work-descript_wrapper
 	display: flex
 	flex-direction: column
@@ -733,17 +788,19 @@ header
 .team_content
 	width: 80%
 	margin-left: 10%
-	padding: 8rem 0
+	padding: 8rem 2rem 8rem 0
 	justify-content: space-between
+	//align-items: center
 	@include xl
-		padding: 4rem 0
+		padding: 4rem 1rem 4rem 0
+		width: 90%
 	@include lg
-		padding: 2rem 0
+		padding: 2rem 1rem 2rem 0
 	@include md
 		margin: 0 auto
 		//width: 60%
-		justify-content: flex-start
-		padding: 0 0 10rem
+		justify-content: space-around
+		padding: 0
 	@include xs
 		justify-content: center
 
@@ -989,7 +1046,7 @@ footer
 
 
 .one-project
-	margin: 84px 0
+	background-color: #fff
 .project-content
 	width: 100%
 	margin: 0 auto
@@ -1011,10 +1068,16 @@ footer
 	margin: 0 auto
 	width: 60%
 	font-weight: normal
+	@include md
+		font-size: 36px
+	@include sm
+		font-size: 28px
 .task-descript
 	margin: 0 auto 4rem
 	font-size: 18px
 	width: 60%
+	@include lg
+		width: 80%
 .project-technical
 	width: 100%
 	padding: 6rem 0
@@ -1027,17 +1090,25 @@ footer
 		align-items: center
 		width: 80%
 		margin: 0 auto
+		@include lg
+			width: 96%
 		.one-tip
 			padding: 0 1rem
 			.tech-icon
 				width: 84px
 				height: 84px
 				background-color: #fff
+				@include lg
+					width: 64px
+					height: 64px
 			p
 				margin: 0
 				font-family: $nav-font
 				font-size: 22px
 				padding: 1rem 0
+				@include xl
+					font-size: 18px
+					line-height: normal
 .project-functions
 	width: 100%
 	padding: 6rem 0
@@ -1094,5 +1165,14 @@ footer
 		text-decoration: underline
 		font-family: $nav-font
 		cursor: pointer
+//.order-project
+//	display: flex
+//	justify-content: center
+//	flex-direction: column
+//	align-items: center
+//	height: 160px
+//	padding-bottom: 2rem
+//	h4
+//		text-align: center
 
 

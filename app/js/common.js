@@ -1,4 +1,15 @@
 $(document).ready(function() {
+    // $(window).load(function() {
+    //     setTimeout(function() {
+    //         $('.preloader').fadeOut('slow', function() {});
+    //     }, 2000);
+ 
+    // });
+
+    // $(window).load(function() {
+    //     $('.preloader').fadeOut().end().delay(1000).fadeout('slow');
+    // });
+    
     $('#pagepiling').pagepiling({
         menu: '#myMenu',
         direction: 'horizontal',
@@ -60,4 +71,8 @@ $(document).ready(function() {
         $('.callback-modal').removeClass('active');
         $('body').removeClass('fixed');
     });
+    // $('body.fixed').click(function(){
+    //     $('.onework-modal.works_content').removeClass('active');
+    //     $('body').removeClass('fixed');
+    // });
 });

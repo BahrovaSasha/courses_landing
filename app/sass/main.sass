@@ -70,6 +70,67 @@ body
 .fixed
 	position: fixed
 	width: 100%
+
+	//preloader
+.preloader
+	display: none
+.preloader.active
+	height: 100%
+	width: 100%
+	background-color: $dark
+	z-index: 200
+	display: flex
+	align-items: center
+	position: absolute
+	.sk-wandering-cubes
+		$animationDuration: 1.8s
+
+		width: 4em
+		height: 4em
+		position: relative
+		margin: auto
+
+		.sk-cube
+			background-color: $accent
+			width: 1em
+			height: 1em
+			position: absolute
+			top: 0
+			left: 0
+			animation: sk-wandering-cubes $animationDuration ease-in-out #{-$animationDuration} infinite both
+
+
+		.sk-cube-2
+			animation-delay: (-$animationDuration / 2)
+
+
+
+@keyframes sk-wandering-cubes
+	$cubeDistance: 2em
+	0%
+		transform: rotate(0deg)
+
+	25%
+		transform: translateX($cubeDistance) rotate(-90deg) scale(0.5)
+
+	50%
+		transform: translateX($cubeDistance) translateY($cubeDistance) rotate(-179deg)
+
+	50.1%
+		transform: translateX($cubeDistance) translateY($cubeDistance) rotate(-180deg)
+
+	75%
+		transform: translateX(0) translateY($cubeDistance) rotate(-270deg) scale(0.5)
+
+	100%
+		transform: rotate(-360deg)
+
+
+
+
+
+
+
 .logo-ybs
 	display: none
 .services-icons
@@ -105,7 +166,7 @@ header
 	width: 8.4rem
 	background-color: $accent
 	position: fixed
-	z-index: 19
+	z-index: 100
 	height: auto
 	left: 0
 	line-height: 0
@@ -120,6 +181,8 @@ header
 		width: 6.4rem
 	@include md
 		width: 5rem
+	@include sm
+		width: 4rem
 .logo-wrap
 	//position: relative
 	width: inherit
@@ -375,7 +438,7 @@ header
 			width: 40%
 		@include sm
 			bottom: 0
-			width: 50%
+			width: 40%
 			height: 70%
 		@include xs
 			display: none
@@ -409,7 +472,7 @@ header
 			width: 40%
 		@include sm
 			bottom: 0
-			width: 50%
+			width: 40%
 			height: 70%
 		@include xs
 			display: none
@@ -493,10 +556,10 @@ header
 	overflow-x: hidden
 	//z-index: 10
 	@include lg
-		margin: 12rem 0 7.4rem
+		margin: 12rem auto 7.4rem
 		height: calc(100vh - 19.4rem)
 	@include md
-		margin: 10rem 0 6rem
+		margin: 10rem auto 6rem
 		height: calc(100vh - 16rem)
 
 .section_content
@@ -513,10 +576,11 @@ header
 		margin-left: 14%
 	@include md
 		margin-left: 16%
-		//width: 80%
+
 	@include sm
 		//padding-top: 0
-		margin-left: 18%
+		margin-left: 0
+		width: 96%
 .section_header
 	padding-top: 2rem
 	font-family: $header-font
@@ -616,14 +680,16 @@ header
 	//justify-content: center
 	height: calc(100vh - 20rem)
 	position: relative
+	overflow-y: scroll
 	@include lg
 		//width: 80%
 		//margin-left: 10%
 		flex-direction: column
 	@include sm
 		//width: 70%
-		//margin-left: 15%
+		margin-left: 42px
 		//height: auto
+
 	.first-work
 		min-height: 40rem
 		height: 100%
@@ -638,13 +704,15 @@ header
 	.next-works
 		//min-height: 40rem
 		width: 60%
-		height: 100%
+		//height: 100%
 		display: flex
 		flex-direction: column
 		@include lg
 			width: 100%
-			height: auto
+			//height: auto
 			//min-height: 50rem
+		@include sm
+			height: auto
 		.top-works
 			height: 50%
 			width: 100%
@@ -654,6 +722,7 @@ header
 				min-height: 18rem
 			@include sm
 				flex-direction: column
+				height: 100%
 			.square-work
 				//min-height: 25rem
 				height: 100%
@@ -669,7 +738,7 @@ header
 				height: 100%
 				background-color: #7e7e7e
 				@include sm
-					min-height: 18rem
+					min-height: 20rem
 		.bottom-works
 			height: 50%
 			width: 100%
@@ -679,13 +748,14 @@ header
 				min-height: 18rem
 			@include sm
 				flex-direction: column
+				height: 100%
 			.rectangle-work
 				height: 100%
 				background-color: #7e7e7e
 				width: 100%
 				//min-height: 25rem
 				@include sm
-					min-height: 18rem
+					min-height: 20rem
 			.square-work
 				//min-height: 25rem
 				height: 100%
@@ -694,6 +764,7 @@ header
 				@include sm
 					width: 100%
 					min-height: 18rem
+
 
 .onework-modal.works_content
 	display: none
@@ -706,16 +777,20 @@ header
 	overflow-y: scroll
 	overflow-x: hidden
 	//transition: .4s linear
+	@include sm
+		//top: -2rem
+		//height: 100%
+
 	.close-onework
 		background: transparent
 		left: 90%
-		top: 10rem
+		top: 7.6rem
 		font-size: 18px
 		position: fixed
 		color: #fff
 		opacity: .6
-		//@include md
-		//	left: 85%
+		@include sm
+			left: 92%
 
 
 
@@ -801,6 +876,8 @@ header
 		//width: 60%
 		justify-content: space-around
 		padding: 0
+	@include sm
+		padding-bottom: 4rem
 	@include xs
 		justify-content: center
 
@@ -1016,7 +1093,7 @@ footer
 .callback-modal
 	display: none
 .callback-modal.active
-	//display: none
+	display: block
 	position: absolute
 	background-color: $dark
 	width: 100%
@@ -1057,9 +1134,12 @@ footer
 	width: 80%
 	background-color: #eee
 	margin: 2rem auto
+	@include sm
+		width: 100%
 .task-content
-	//margin: 0 auto 2rem
-	//width: 60%
+	@include sm
+		width: 96%
+		margin: 0 auto
 .project-subhead
 	font-family: $header-font
 	color: $dark
@@ -1070,14 +1150,21 @@ footer
 	font-weight: normal
 	@include md
 		font-size: 36px
+
 	@include sm
 		font-size: 28px
+		margin: 0
+		padding-left: 1rem
 .task-descript
 	margin: 0 auto 4rem
 	font-size: 18px
 	width: 60%
 	@include lg
 		width: 80%
+	@include sm
+		padding-left: 1rem
+		width: 100%
+		font-size: 16px
 .project-technical
 	width: 100%
 	padding: 6rem 0
@@ -1092,8 +1179,14 @@ footer
 		margin: 0 auto
 		@include lg
 			width: 96%
+		@include md
+			width: 100%
+			flex-wrap: wrap
+			justify-content: center
+		@include sm
+			justify-content: normal
 		.one-tip
-			padding: 0 1rem
+			padding: 0 1rem 1rem
 			.tech-icon
 				width: 84px
 				height: 84px
@@ -1101,6 +1194,11 @@ footer
 				@include lg
 					width: 64px
 					height: 64px
+				@include md
+					width: 54px
+					height: 54px
+			@include sm
+				padding: 0 1rem 1rem 4rem
 			p
 				margin: 0
 				font-family: $nav-font
@@ -1109,6 +1207,8 @@ footer
 				@include xl
 					font-size: 18px
 					line-height: normal
+				@include md
+					font-size: 16px
 .project-functions
 	width: 100%
 	padding: 6rem 0
@@ -1118,12 +1218,15 @@ footer
 		//align-items: center
 		width: 80%
 		margin: 0 auto
+		@include sm
+			width: 90%
 		.one-function
 			display: flex
 			justify-content: space-between
 			padding: 2rem 4rem
 			border-bottom: 2px solid #eee
-
+			@include sm
+				padding: 2rem 1rem
 			.one-function_wrap
 				display: flex
 				align-items: center
@@ -1165,6 +1268,10 @@ footer
 		text-decoration: underline
 		font-family: $nav-font
 		cursor: pointer
+		@include md
+			font-size: 22px
+		@include sm
+			font-size: 18px
 //.order-project
 //	display: flex
 //	justify-content: center

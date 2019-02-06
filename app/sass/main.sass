@@ -72,8 +72,8 @@ body
 	width: 100%
 
 .preloader
-	display: none	
-.preloader.active
+	//display: none
+.preloader
 	height: 100%
 	width: 100%
 	background-color: $dark
@@ -137,6 +137,7 @@ body
 
 button
 	border: none
+	cursor: pointer
 
 
 //.horizontal-content
@@ -546,7 +547,7 @@ header
 //.section-scroll_wrapper
 //	//padding-top: 13rem
 //	overflow-y: scroll
-.section-scroll_wrapper
+.wrap-section_content
 	margin: 13rem auto 8.4rem
 	height: calc(100vh - 21.4rem)
 	width: 80%
@@ -564,12 +565,12 @@ header
 .section_content
 	margin-left: 20%
 	//padding-top: 3rem
-	width: 40%
+	width: 60%
 	//box-sizing: content-box
-	@include rwd(1300)
-		width: 50%
-	@include xl
-		//padding-top: 9rem
+	//@include rwd(1300)
+	//	width: 50%
+	//@include xl
+	//	//padding-top: 9rem
 	@include lg
 		width: 80%
 		margin-left: 14%
@@ -581,7 +582,7 @@ header
 		margin-left: 0
 		width: 96%
 .section_header
-	padding-top: 2rem
+	//padding-top: 2rem
 	font-family: $header-font
 	font-size: 64px
 	font-weight: normal
@@ -617,7 +618,7 @@ header
 .services_content
 	width: 80%
 	margin-left: 10%
-	padding: 1rem 0
+	padding: 2rem 0 1rem 0
 	//margin-bottom: 84px
 	@include rwd(1400)
 		//padding: 2rem 0 8.4rem
@@ -635,7 +636,7 @@ header
 	.one-service
 		display: flex
 		align-items: center
-		padding-bottom: 4rem
+		padding-bottom: 2rem
 		//@include rwd(1400)
 		//	padding-bottom: 0
 		@include xl
@@ -693,7 +694,17 @@ header
 		min-height: 40rem
 		height: 100%
 		width: 40%
-		background-color: #ccc
+		background: url(../img/urb_onework.jpg) $dark no-repeat 50% 50%
+		background-blend-mode: overlay
+		background-size: cover
+		background-color: rgba(50, 50, 50, .6)
+		transition: all .3s ease-in-out
+		&:hover
+			background-color: rgba(50, 50, 50, .8)
+			cursor: pointer
+			background-size: 300% auto
+
+
 		@include lg
 			width: 100%
 			height: 40%
@@ -732,10 +743,19 @@ header
 					width: 100%
 					min-height: 10rem
 			.rectangle-work
+				background: url(../img/sline_onework.jpg) no-repeat 50% 50%
+				background-color: rgba(50, 50, 50, .6)
+				background-blend-mode: overlay
+				background-size: cover
 				//min-height: 25rem
 				width: 100%
 				height: 100%
-				background-color: #7e7e7e
+				transition: all .3s ease-in-out
+				&:hover
+					background-color: rgba(50, 50, 50, .8)
+					cursor: pointer
+					background-size: 150%
+					//transition: all .3s ease-in-out
 				@include sm
 					min-height: 20rem
 		.bottom-works
@@ -750,9 +770,18 @@ header
 				height: 100%
 			.rectangle-work
 				height: 100%
-				background-color: #7e7e7e
+
 				width: 100%
-				//min-height: 25rem
+				background: url(../img/chocolabs_onework.jpg) $dark no-repeat 50% 50%
+				background-blend-mode: overlay
+				background-size: cover
+				background-color: rgba(50, 50, 50, .6)
+				transition: all .3s ease-in-out
+				&:hover
+					background-color: rgba(50, 50, 50, .8)
+					cursor: pointer
+					background-size: 300% auto
+
 				@include sm
 					min-height: 20rem
 			.square-work
@@ -765,10 +794,10 @@ header
 					min-height: 18rem
 
 
-.onework-modal.works_content
+.onework-modal
 	display: none
 	//transition: .4s linear
-.onework-modal.works_content.active
+.onework-modal.active
 	display: block
 	position: absolute
 	z-index: 100
@@ -782,14 +811,14 @@ header
 
 	.close-onework
 		background: transparent
-		left: 90%
-		top: 7.6rem
+		left: 92%
+		top: 10rem
 		font-size: 18px
 		position: fixed
 		color: #fff
 		opacity: .6
-		@include sm
-			left: 92%
+		//@include sm
+		//	left: 92%
 
 
 
@@ -862,14 +891,14 @@ header
 .team_content
 	width: 80%
 	margin-left: 10%
-	padding: 8rem 2rem 8rem 0
+	padding: 4rem 0 8rem
 	justify-content: space-between
 	//align-items: center
 	@include xl
-		padding: 4rem 1rem 4rem 0
+		padding: 4rem 0 4rem
 		width: 90%
 	@include lg
-		padding: 2rem 1rem 2rem 0
+		padding: 2rem 0 2rem
 	@include md
 		margin: 0 auto
 		//width: 60%
@@ -1127,6 +1156,8 @@ footer
 	width: 100%
 	margin: 0 auto
 	overflow-y: scroll
+	.section_content
+		padding-top: 4rem
 
 .project-banner
 	height: 30rem

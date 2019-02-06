@@ -1,15 +1,11 @@
-$(document).ready(function() {
-    // $(window).load(function() {
-    //     setTimeout(function() {
-    //         $('.preloader').fadeOut('slow', function() {});
-    //     }, 2000);
- 
-    // });
 
-    // $(window).load(function() {
-    //     $('.preloader').fadeOut().end().delay(1000).fadeout('slow');
-    // });
-    
+$(window).on('load', function() {
+    $('.preloader').delay(1000).fadeOut('fast');
+});
+$(document).ready(function() {
+
+
+
     $('#pagepiling').pagepiling({
         menu: '#myMenu',
         direction: 'horizontal',

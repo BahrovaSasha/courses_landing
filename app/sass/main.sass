@@ -694,15 +694,43 @@ header
 		min-height: 40rem
 		height: 100%
 		width: 40%
-		background: url(../img/urb_onework.jpg) $dark no-repeat 50% 50%
-		background-blend-mode: overlay
-		background-size: cover
-		background-color: rgba(50, 50, 50, .6)
-		transition: all .3s ease-in-out
+		//background: url(../img/urb_onework.jpg) $dark no-repeat 50% 50%
+		//background-blend-mode: overlay
+		//background-size: cover
+		//background-color: rgba(50, 50, 50, .6)
+		overflow: hidden
+		position: relative
+		&:before
+			content: ''
+			background: url(../img/urb_onework.jpg) $dark no-repeat 50% 50%
+			background-blend-mode: overlay
+			background-size: cover
+			background-color: rgba(50, 50, 50, .6)
+			width: 100%
+			height: 100%
+			position: absolute
+			transition: all .3s ease-in-out
+		&:hover
+			&:before
+				background-color: rgba(50, 50, 50, .8)
+				transform: scale(1.3)
+
+
+
+
+		//.work-image
+		//	height: 100%
+		//	width: 100%
+		//	background-size: cover
+		//	position: relative
+		//	img
+		//		height: 100%
+		//		width: auto
+		//		position: absolute
 		&:hover
 			background-color: rgba(50, 50, 50, .8)
 			cursor: pointer
-			background-size: 300% auto
+			//background-size: 300% auto
 
 
 		@include lg
@@ -743,19 +771,26 @@ header
 					width: 100%
 					min-height: 10rem
 			.rectangle-work
-				background: url(../img/sline_onework.jpg) no-repeat 50% 50%
-				background-color: rgba(50, 50, 50, .6)
-				background-blend-mode: overlay
-				background-size: cover
+
 				//min-height: 25rem
 				width: 100%
 				height: 100%
-				transition: all .3s ease-in-out
+				overflow: hidden
+				position: relative
+				&:before
+					content: ''
+					background: url(../img/sline_onework.jpg) $dark no-repeat 50% 50%
+					background-blend-mode: overlay
+					background-size: cover
+					background-color: rgba(50, 50, 50, .6)
+					width: 100%
+					height: 100%
+					position: absolute
+					transition: all .3s ease-in-out
 				&:hover
-					background-color: rgba(50, 50, 50, .8)
-					cursor: pointer
-					background-size: 150%
-					//transition: all .3s ease-in-out
+					&:before
+						background-color: rgba(50, 50, 50, .8)
+						transform: scale(1.3)
 				@include sm
 					min-height: 20rem
 		.bottom-works
@@ -772,15 +807,22 @@ header
 				height: 100%
 
 				width: 100%
-				background: url(../img/chocolabs_onework.jpg) $dark no-repeat 50% 50%
-				background-blend-mode: overlay
-				background-size: cover
-				background-color: rgba(50, 50, 50, .6)
-				transition: all .3s ease-in-out
+				overflow: hidden
+				position: relative
+				&:before
+					content: ''
+					background: url(../img/chocolabs_onework.jpg) $dark no-repeat 50% 50%
+					background-blend-mode: overlay
+					background-size: cover
+					background-color: rgba(50, 50, 50, .6)
+					width: 100%
+					height: 100%
+					position: absolute
+					transition: all .3s ease-in-out
 				&:hover
-					background-color: rgba(50, 50, 50, .8)
-					cursor: pointer
-					background-size: 300% auto
+					&:before
+						background-color: rgba(50, 50, 50, .8)
+						transform: scale(1.3)
 
 				@include sm
 					min-height: 20rem
@@ -794,42 +836,14 @@ header
 					min-height: 18rem
 
 
-.onework-modal
-	display: none
-	//transition: .4s linear
-.onework-modal.active
-	display: block
-	position: absolute
-	z-index: 100
-	background-color: #fff
-	overflow-y: scroll
-	overflow-x: hidden
-	//transition: .4s linear
-	@include sm
-		//top: -2rem
-		//height: 100%
-
-	.close-onework
-		background: transparent
-		left: 92%
-		top: 10rem
-		font-size: 18px
-		position: fixed
-		color: #fff
-		opacity: .6
-		//@include sm
-		//	left: 92%
-
-
-
 
 
 .work-descript_wrapper
 	display: flex
 	flex-direction: column
 	justify-content: center
-	&:last-child
-		align-items: end
+	//&:last-child
+	//	align-items: end
 .works-header
 	font-family: $header-font
 	color: $dark
@@ -848,6 +862,7 @@ header
 	color: #fff
 	padding: 1rem 0 1rem 1rem
 	margin: 0
+	z-index: 1
 	@include lg
 		font-size: 20px
 		padding: 1rem 0 5px 1rem
@@ -1127,6 +1142,7 @@ footer
 	width: 100%
 	height: 100%
 	z-index: 100
+	animation: fadein .2s ease-in-out
 .callback-modal_content
 	//position: relative
 	height: 100%
@@ -1148,14 +1164,61 @@ footer
 			background: transparent
 
 
+.onework-modal
+	display: none
+	//animation: fade0ut 1s ease-in-out
+.onework-modal.active
+	display: flex
+	align-items: center
+	justify-content: center
+	position: absolute
+	z-index: 100
+	//background-color: #fff
+	overflow-y: scroll
+	overflow-x: hidden
+	animation: fadein .2s ease-in-out
+
+	.close-onework
+		background: transparent
+		left: 92%
+		top: 10rem
+		font-size: 18px
+		position: fixed
+		color: #fff
+		opacity: .6
+//@include sm
+//	left: 92%
+
+@keyframes fadein
+	0%
+		opacity: .2
+	100%
+		opacity: 1
+
+@keyframes fadeout
+	0%
+		opacity: 1
+	100%
+		opacity: .2
+
+@keyframes sizeup
+	0%
+		transform: scale(.8)
+	100%
+		transform: scale(1)
+
 
 
 .one-project
 	background-color: #fff
+	height: 100%
+	width: 100%
+	overflow-y: scroll
+	animation: sizeup .1s ease-in-out
 .project-content
 	width: 100%
 	margin: 0 auto
-	overflow-y: scroll
+
 	.section_content
 		padding-top: 4rem
 
